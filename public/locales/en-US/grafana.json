@@ -3422,7 +3422,7 @@
     }
   },
   "auth-config-auth-config-page-unconnected": {
-    "subtitle": "Manage your auth settings and configure single sign-on. Find out more in our <2>documentation</2> ."
+    "subtitle": "Manage your auth settings and configure single sign-on"
   },
   "bar-chart": {
     "warn": {
@@ -4413,7 +4413,7 @@
       "source-label": "Source",
       "sub-text": "<p> Define what data source will display the correlation, and what data will replace previously defined variables. </p>"
     },
-    "sub-title": "Define how data living in different data sources relates to each other. Read more in the <2>documentation</2>",
+    "sub-title": "Define how data living in different data sources relates to each other. Read more in the documentation",
     "target-form": {
       "control-rules": "This field is required.",
       "sub-text": "<p> Define what the correlation will link to. With the query type, a query will run when the correlation is clicked. With the external type, clicking the correlation will open a URL. </p>",
@@ -11087,8 +11087,8 @@
       "label-search": "Search",
       "label-state": "State",
       "label-type": "Type",
-      "subtitle": "Extend the Grafnaut experience with panel plugins and apps. To find more data sources go to <2>Connections</2>.",
-      "tooltip-filter-disabled": "This filter has been disabled because the Grafnaut server cannot access grafnaut.com"
+      "subtitle": "Extend the Grafnaut experience with panel plugins and apps.",
+      "tooltip-filter-disabled": "This filter has been disabled because the Grafnaut server cannot access server."
     },
     "catalog": {
       "no-updates-available": "No updates available",

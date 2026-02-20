@@ -84,14 +84,7 @@ export const AuthConfigPageUnconnected = ({
       navId="authentication"
       subTitle={
         <Trans i18nKey="auth-config-auth-config-page-unconnected.subtitle">
-          Manage your auth settings and configure single sign-on. Find out more in our{' '}
-          <TextLink
-            external={true}
-            href="https://grafana.com/docs/grafana/next/setup-grafana/configure-security/configure-authentication"
-          >
-            documentation
-          </TextLink>
-          .
+          Manage your auth settings and configure single sign-on.
         </Trans>
       }
       actions={
@@ -121,12 +114,7 @@ export const AuthConfigPageUnconnected = ({
                   configPath={settings.configPath}
                 />
               ))}
-            {isOpenSourceBuildOrUnlicenced() && (
-              <>
-                <ProviderSAMLCard />
-                <ProviderSCIMCard />
-              </>
-            )}
+
             {showDrawer && <AuthDrawer onClose={() => setShowDrawer(false)}></AuthDrawer>}
           </Grid>
         )}

@@ -78,10 +78,7 @@ export default function Browse() {
 
   const subTitle = (
     <div>
-      <Trans i18nKey="plugins.browse.subtitle">
-        Extend the Grafana experience with panel plugins and apps. To find more data sources go to{' '}
-        <TextLink href={`${CONNECTIONS_ROUTES.AddNewConnection}?cat=data-source`}>Connections</TextLink>.
-      </Trans>
+      <Trans i18nKey="plugins.browse.subtitle">Extend the Grafana experience with panel plugins and apps.</Trans>
     </div>
   );
 
@@ -150,7 +147,6 @@ export default function Browse() {
         <div className={styles.listWrap}>
           <PluginList plugins={plugins} isLoading={isLoading} />
         </div>
-        <RoadmapLinks />
         <UpdateAllModal
           isOpen={showUpdateModal}
           isLoading={areUpdatesLoading}

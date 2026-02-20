@@ -3403,7 +3403,7 @@
     }
   },
   "auth-config-auth-config-page-unconnected": {
-    "subtitle": ""
+    "subtitle": "管理您的身份验证设置并配置单点登录"
   },
   "bar-chart": {
     "warn": {
@@ -4386,7 +4386,7 @@
       "source-label": "源",
       "sub-text": ""
     },
-    "sub-title": "定义不同数据源中的数据如何相互关联。请在<2>文档</2>中阅读更多信息",
+    "sub-title": "定义不同数据源中的数据如何相互关联。请在文档中阅读更多信息",
     "target-form": {
       "control-rules": "此字段是必填字段。",
       "sub-text": "",
@@ -11034,8 +11034,8 @@
       "label-search": "搜索",
       "label-state": "状态",
       "label-type": "类型",
-      "subtitle": "使用面板插件和应用扩展 Grafnaut 体验。要查找更多数据源，请前往<2>连接</2>。",
-      "tooltip-filter-disabled": "该筛选器已禁用，因为 Grafnaut 服务器无法访问 grafnaut.com"
+      "subtitle": "使用面板插件和应用扩展 Grafnaut 体验。",
+      "tooltip-filter-disabled": "该筛选器已禁用，因为 Grafnaut 服务器无法访问资源服务。"
     },
     "catalog": {
       "no-updates-available": "没有可用更新",

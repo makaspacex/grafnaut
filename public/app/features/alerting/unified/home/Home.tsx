@@ -25,12 +25,6 @@ function Home() {
         <WelcomeHeader />
         <PluginIntegrations />
       </Stack>
-      <Box marginTop={{ lg: 2, md: 2, xs: 2 }}>
-        <Stack direction="row" gap={2}>
-          <SyntheticMonitoringCard />
-          <IRMCard />
-        </Stack>
-      </Box>
       <Box marginTop={{ lg: 2, md: 0, xs: 0 }}>
         <TabsBar>
           {insightsEnabled && (
