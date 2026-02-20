@@ -1,11 +1,9 @@
 package navtreeimpl
 
 import (
-	"github.com/grafana/grafana/pkg/apimachinery/identity"
 	"github.com/grafana/grafana/pkg/login/social"
 	ac "github.com/grafana/grafana/pkg/services/accesscontrol"
 	"github.com/grafana/grafana/pkg/services/accesscontrol/ssoutils"
-	"github.com/grafana/grafana/pkg/services/cloudmigration"
 	contextmodel "github.com/grafana/grafana/pkg/services/contexthandler/model"
 	"github.com/grafana/grafana/pkg/services/correlations"
 	"github.com/grafana/grafana/pkg/services/featuremgmt"
@@ -36,7 +34,11 @@ func (s *ServiceImpl) getAdminNode(c *contextmodel.ReqContext) (*navtree.NavLink
 	}
 	if hasAccess(ac.EvalPermission(ac.ActionSettingsRead, ac.ScopeSettingsAll)) {
 		generalNodeLinks = append(generalNodeLinks, &navtree.NavLink{
-			Text: "Settings", SubTitle: "View the settings defined in your Grafana config", Id: "server-settings", Url: s.cfg.AppSubURL + "/admin/settings", Icon: "sliders-v-alt",
+			Text: "Settings",
+			SubTitle: "View the settings defined in your Grafana config",
+			Id: "server-settings",
+			Url: s.cfg.AppSubURL + "/admin/settings",
+			Icon: "sliders-v-alt",
 		})
 	}
 	if hasGlobalAccess(orgsAccessEvaluator) {
@@ -44,25 +46,25 @@ func (s *ServiceImpl) getAdminNode(c *contextmodel.ReqContext) (*navtree.NavLink
 			Text: "Organizations", SubTitle: "Isolated instances of Grafana running on the same server", Id: "global-orgs", Url: s.cfg.AppSubURL + "/admin/orgs", Icon: "building",
 		})
 	}
-	if hasAccess(cloudmigration.MigrationAssistantAccess) && s.features.IsEnabled(ctx, featuremgmt.FlagOnPremToCloudMigrations) {
-		generalNodeLinks = append(generalNodeLinks, &navtree.NavLink{
-			Text:     "Migrate to Grafana Cloud",
-			Id:       "migrate-to-cloud",
-			SubTitle: "Copy resources from your self-managed installation to a cloud stack",
-			Url:      s.cfg.AppSubURL + "/admin/migrate-to-cloud",
-		})
-	}
+	// if hasAccess(cloudmigration.MigrationAssistantAccess) && s.features.IsEnabled(ctx, featuremgmt.FlagOnPremToCloudMigrations) {
+	// 	generalNodeLinks = append(generalNodeLinks, &navtree.NavLink{
+	// 		Text:     "Migrate to Grafana Cloud",
+	// 		Id:       "migrate-to-cloud",
+	// 		SubTitle: "Copy resources from your self-managed installation to a cloud stack",
+	// 		Url:      s.cfg.AppSubURL + "/admin/migrate-to-cloud",
+	// 	})
+	// }
 	//nolint:staticcheck // not yet migrated to OpenFeature
-	if c.HasRole(identity.RoleAdmin) &&
-		(s.cfg.StackID == "" || // show OnPrem even when provisioning is disabled
-			s.features.IsEnabledGlobally(featuremgmt.FlagProvisioning)) {
-		generalNodeLinks = append(generalNodeLinks, &navtree.NavLink{
-			Text:     "Provisioning",
-			Id:       "provisioning",
-			SubTitle: "View and manage your provisioning connections",
-			Url:      s.cfg.AppSubURL + "/admin/provisioning",
-		})
-	}
+	// if c.HasRole(identity.RoleAdmin) &&
+	// 	(s.cfg.StackID == "" || // show OnPrem even when provisioning is disabled
+	// 		s.features.IsEnabledGlobally(featuremgmt.FlagProvisioning)) {
+	// 	generalNodeLinks = append(generalNodeLinks, &navtree.NavLink{
+	// 		Text:     "Provisioning",
+	// 		Id:       "provisioning",
+	// 		SubTitle: "View and manage your provisioning connections",
+	// 		Url:      s.cfg.AppSubURL + "/admin/provisioning",
+	// 	})
+	// }
 
 	generalNode := &navtree.NavLink{
 		Text:     "General",

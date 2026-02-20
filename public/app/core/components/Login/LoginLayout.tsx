@@ -30,7 +30,7 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
   const subTitle = branding?.loginSubtitle ?? Branding.GetLoginSubTitle();
   const loginTitle = branding?.loginTitle ?? Branding.LoginTitle;
   const loginBoxBackground = branding?.loginBoxBackground || Branding.LoginBoxBackground();
-  const loginLogo = branding?.loginLogo;
+  // const loginLogo = branding?.loginLogo;
   const hideEdition = branding?.hideEdition ?? Branding.HideEdition;
 
   useEffect(() => setStartAnim(true), []);
@@ -42,7 +42,7 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
       <div className={loginStyles.loginMain}>
         <div className={cx(loginStyles.loginContent, loginBoxBackground, 'login-content-box')}>
           <div className={loginStyles.loginLogoWrapper}>
-            <Branding.LoginLogo className={loginStyles.loginLogo} logo={loginLogo} />
+            {/* <Branding.LoginLogo className={loginStyles.loginLogo} logo={loginLogo} /> */}
             <div className={loginStyles.titleWrapper}>
               {isChangingPassword ? (
                 <h1 className={loginStyles.mainTitle}>

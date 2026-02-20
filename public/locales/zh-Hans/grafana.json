@@ -119,7 +119,7 @@
       "title-enhanced-ldap-integration": "增强型 LDAP 集成",
       "title-enterprise-plugins": "企业插件",
       "title-find-unused-dashboards": "查找未使用的数据面板",
-      "title-grafana-usage-insights": "Grafana 使用情况洞察",
+      "title-grafana-usage-insights": "Grafnaut 使用情况洞察",
       "title-reporting": "正在报告",
       "title-saml-authentication": "SAML 身份验证",
       "title-settings-updates-at-runtime": "运行时设置更新",
@@ -130,11 +130,11 @@
       "contact-us": "联系我们并获得免费试用",
       "description": "您可以免费使用试用版 30 天。距离试用期结束还剩五天的时候，我们会提醒您。",
       "features-heading": "增强功能",
-      "included-description": "赔偿，与 Grafana Labs 共同确定未来的优先级，以及接受 Grafana 核心团队的培训。",
+      "included-description": "赔偿，与 Grafnaut Labs 共同确定未来的优先级，以及接受 Grafana 核心团队的培训。",
       "included-heading": "还包括：",
       "service-title": "随时为您服务",
       "team-sync-details": "LDAP、GitHub OAuth、Auth Proxy、Okta",
-      "title": "获取 Grafana 企业版"
+      "title": "获取 Grafnaut 企业版"
     },
     "ldap": {
       "debug-subtitle": "",
@@ -197,7 +197,7 @@
       "last-seen-never": "从不"
     },
     "org-users": {
-      "not-editable": "此用户的角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafana 身份验证文档</1>。"
+      "not-editable": "此用户的角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafnaut 身份验证文档</1>。"
     },
     "org-users-table": {
       "body-delete": "您确定要删除用户{{user}}吗？",
@@ -233,7 +233,7 @@
       "year-round-support": "24 × 7 × 365 全天候支持"
     },
     "settings": {
-      "info-description": "这些系统设置在 grafana.ini 或 custom.ini 中定义（或在 ENV 变量中覆盖）。要更改这些设置，您当前需要重新启动 Grafana。"
+      "info-description": "这些系统设置在 grafnaut.ini 或 custom.ini 中定义（或在 ENV 变量中覆盖）。要更改这些设置，您当前需要重新启动 Grafnaut。"
     },
     "un-themed-org-row": {
       "confirmText-confirm-removal": "确认删除"
@@ -279,9 +279,9 @@
     "user-orgs": {
       "add-button": "将用户添加到组织",
       "change-role-button": "更改角色",
-      "external-user-tooltip": "此用户的内置角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafana 身份验证文档</1>。",
+      "external-user-tooltip": "此用户的内置角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafnaut 身份验证文档</1>。",
       "remove-button": "从组织中移除",
-      "role-not-editable": "此用户的角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafana 身份验证文档</1>。",
+      "role-not-editable": "此用户的角色不可编辑，因为它是从您的身份验证提供商同步而来的。有关详细信息，请参阅 <1>Grafnaut 身份验证文档</1>。",
       "title": "组织"
     },
     "user-orgs-modal": {
@@ -291,7 +291,7 @@
     "user-permissions": {
       "change-button": "更改",
       "confirmText-change": "更改",
-      "grafana-admin-key": "Grafana 管理员",
+      "grafana-admin-key": "Grafnaut 管理员",
       "grafana-admin-no": "否",
       "grafana-admin-yes": "是",
       "title": "权限"
@@ -335,7 +335,7 @@
     },
     "users-table": {
       "columns": {
-        "content-grafana-admin": "Grafana 管理员",
+        "content-grafana-admin": "Grafnaut 管理员",
         "title-edit-user": "编辑用户"
       },
       "edit-aria-label": "编辑用户：{{name}}",
@@ -420,12 +420,12 @@
       "clear-filters": "清除筛选器"
     },
     "alert-groups": {
-      "body-grafana-alerted-delivered": "Grafana 已配置为仅向外部 Alertmanagers 发送警报。此处预计不会为所选的 Alertmanager 提供警报。",
+      "body-grafana-alerted-delivered": "Grafnaut 已配置为仅向外部 Alertmanagers 发送警报。此处预计不会为所选的 Alertmanager 提供警报。",
       "grouped-by": "分组方式：{{labels}}",
       "no-results": "沒有結果。",
       "text-loading-notifications": "加载通知",
       "title-error-loading-notifications": "加载通知时出错",
-      "title-grafana-alerts-delivered-alertmanager": "Grafana 警报未发送到 Grafana Alertmanager"
+      "title-grafana-alerts-delivered-alertmanager": "Grafnaut 警报未发送到 Grafana Alertmanager"
     },
     "alert-groups-summary": {
       "text-firing_other": "{{count}} 个触发中",
@@ -468,7 +468,7 @@
     "alert-manager-picker": {
       "external-alertmanagers-group": "外部 Alertmanager",
       "extra-config-warning": {
-        "content": "这里显示了 Grafana alertmanager 与导入配置的合并配置。此合并视图在用户界面中是只读的。",
+        "content": "这里显示了 Grafnaut alertmanager 与导入配置的合并配置。此合并视图在用户界面中是只读的。",
         "title": "导入的配置"
       },
       "noOptionsMessage-no-datasources-found": "未找到数据源"
@@ -558,17 +558,17 @@
       "disable": "禁用",
       "edit-configuration": "编辑配置",
       "enable": "启用",
-      "not-receiving-grafana-managed-alerts": "未接收 Grafana 管理的警报",
+      "not-receiving-grafana-managed-alerts": "未接收 Grafnaut 管理的警报",
       "text-activation-in-progress": "激活中",
       "text-failed-to-adopt-alertmanager": "采用 Alertmanager 失败",
       "text-inconclusive": "无结论",
-      "text-receiving-grafanamanaged-alerts": "接收 Grafana 管理的警报",
+      "text-receiving-grafanamanaged-alerts": "接收 Grafnaut 管理的警报",
       "title-alerting-settings": "警报设置",
       "view-configuration": "视图配置"
     },
     "alertmanager-config": {
       "confirmText-yes-reset-configuration": "是，重置配置",
-      "gma-manual-configuration-description": "无法手动更改内部 Grafana Alertmanager 配置。要更改此配置，请通过用户界面编辑单个资源。",
+      "gma-manual-configuration-description": "无法手动更改内部 Grafnaut Alertmanager 配置。要更改此配置，请通过用户界面编辑单个资源。",
       "gma-manual-configuration-is-not-supported": "不支持手动进行配置更改",
       "message": {
         "configuration-cannot-be-empty": "配置不能为空"
@@ -1008,11 +1008,11 @@
       "update-datasource": "更新数据源"
     },
     "declare-incident-button": {
-      "content-grafana-incident-installed-configured-correctly": "Grafana Incident 未安装或未正确配置",
+      "content-grafana-incident-installed-configured-correctly": "Grafnaut Incident 未安装或未正确配置",
       "declare-incident": "声明事件"
     },
     "declare-incident-menu-item": {
-      "content-grafana-incident-installed-configured-correctly": "Grafana Incident 未安装或未正确配置",
+      "content-grafana-incident-installed-configured-correctly": "Grafnaut Incident 未安装或未正确配置",
       "label-declare-incident": "声明事件"
     },
     "delete-rule-modal": {
@@ -1170,11 +1170,11 @@
     },
     "export-new-grafana-rule-page": {
       "text": {
-        "export-new-grafana-rule": "导出新的 Grafana 规则"
+        "export-new-grafana-rule": "导出新的 Grafnaut 规则"
       }
     },
     "export-new-rule-button": {
-      "tooltip-export-new-grafana-rule": "导出新的 Grafana 规则"
+      "tooltip-export-new-grafana-rule": "导出新的 Grafnaut 规则"
     },
     "expression": {
       "not-supported": "不支持的表达式：{{expression}}",
@@ -1201,7 +1201,7 @@
     "feature-toggle-page": {
       "nav-model": {
         "subTitle": {
-          "enable-alerting-grafana-config": "要启用警报，请在 Grafana 配置中启用该选项"
+          "enable-alerting-grafana-config": "要启用警报，请在 Grafnaut 配置中启用该选项"
         },
         "text": {
           "alerting-is-not-enabled": "警报未启用"
@@ -1295,7 +1295,7 @@
       "documentation": {
         "annotations-attached-alert": "附加到警报的一组注释。",
         "fingerprint-identify-alert": "可用于识别警报的指纹。",
-        "grafana-external-alertmanager": "返回到 Grafana 或外部 Alertmanager 的链接。",
+        "grafana-external-alertmanager": "返回到 Grafnaut 或外部 Alertmanager 的链接。",
         "organization-alert": "拥有警报的组织的 ID。",
         "time-the-alert-started-firing": "警报开始触发的时间。"
       },
@@ -1316,12 +1316,12 @@
     },
     "get-grafana-alertmanager-scenes": {
       "title": {
-        "grafana-alertmanager": "Grafana Alertmanager"
+        "grafana-alertmanager": "Grafnaut Alertmanager"
       }
     },
     "get-grafana-managed-scenes": {
       "title": {
-        "grafanamanaged-alert-rules": "Grafana 管理的警报规则"
+        "grafanamanaged-alert-rules": "Grafnaut 管理的警报规则"
       }
     },
     "get-mimir-managed-rules-per-group-scenes": {
@@ -1357,7 +1357,7 @@
       }
     },
     "getting-stared": {
-      "learn-more": "如需实际操作方面的介绍，请参阅我们的<2>开始使用 Grafana Alerting 的教程</2>"
+      "learn-more": "如需实际操作方面的介绍，请参阅我们的<2>开始使用 Grafnaut Alerting 的教程</2>"
     },
     "getting-started": {
       "condition-breached-alert-instance-fires": "如果违反条件，则触发警报实例",
@@ -1367,7 +1367,7 @@
       "how-it-works": "运作方式",
       "monitor-alert-rules": "使用数据面板和可视化功能<0>监控</0>您的警报规则",
       "notification-policies-contact-points": "通知已发送到通知策略中指定的联络点",
-      "periodically-queries-data-sources": "Grafana 警报功能会定期查询数据源并评估警报规则中定义的条件",
+      "periodically-queries-data-sources": "Grafnaut 警报功能会定期查询数据源并评估警报规则中定义的条件",
       "route-alert-notifications": "<0>将警报通知直接路由</0>到联络点，或通过通知策略路由以获得更大的灵活性"
     },
     "global-config": {
@@ -1388,8 +1388,8 @@
       "admin-hint-all": "要更改 Alertmanager 设置，请前往“警报管理”页面。如果您没有访问权限，请与您的管理员联系。",
       "admin-hint-external": "要更改 Alertmanager 设置，请前往“警报管理”页面。如果您没有访问权限，请与您的管理员联系。",
       "configuration-changes-all": "确保在正确的 Alertmanager（内部和外部）中进行配置更改。更改一项配置不会影响其他配置。",
-      "configuration-changes-external": "Grafana 已配置为仅向外部 Alertmanagers 发送警报。更改 Grafana Alertmanager 配置不会影响警报的发送。",
-      "title-grafana-alerts-delivered-alertmanager": "Grafana 警报未发送到 Grafana Alertmanager",
+      "configuration-changes-external": "Grafnaut 已配置为仅向外部 Alertmanagers 发送警报。更改 Grafana Alertmanager 配置不会影响警报的发送。",
+      "title-grafana-alerts-delivered-alertmanager": "Grafnaut 警报未发送到 Grafana Alertmanager",
       "title-you-have-additional-alertmanagers-to-configure": "您还有其他 Alertmanager 需要配置"
     },
     "grafana-common-channel-settings": {
@@ -1436,7 +1436,7 @@
       "text-loading": "正在加载..."
     },
     "grafana-receiver-form": {
-      "body-loading-on-call-integration-failed": "您的 Grafana 实例已启用 Grafana OnCall 插件，但无法连接到该插件。请检查插件配置",
+      "body-loading-on-call-integration-failed": "您的 Grafnaut 实例已启用 Grafana OnCall 插件，但无法连接到该插件。请检查插件配置",
       "text-loading-notifiers": "正在加载通知程序...",
       "title-loading-on-call-integration-failed": "加载 OnCall 集成失败"
     },
@@ -1465,10 +1465,10 @@
       "title-drawer": "导出 {{groupName}} 规则"
     },
     "grafana-rules": {
-      "export-all-grafana-rules-aria-label-export-all-grafana-rules": "导出所有 Grafana 规则",
-      "export-all-grafana-rules-tooltip-export-all-grafanamanaged-rules": "导出所有 Grafana 管理的规则",
+      "export-all-grafana-rules-aria-label-export-all-grafana-rules": "导出所有 Grafnaut 规则",
+      "export-all-grafana-rules-tooltip-export-all-grafanamanaged-rules": "导出所有 Grafnaut 管理的规则",
       "no-rules-found": "未找到规则。",
-      "tooltip-create-new-grafanamanaged-recording-rule": "创建新的 Grafana 管理的录制规则"
+      "tooltip-create-new-grafanamanaged-recording-rule": "创建新的 Grafnaut 管理的录制规则"
     },
     "grafana-rules-export-preview": {
       "text-loading": "正在加载..."
@@ -1546,10 +1546,10 @@
       }
     },
     "home": {
-      "irm-card-description": "使用 Grafana Cloud IRM 统一处理值班、警报和事件响应。",
+      "irm-card-description": "使用 Grafnaut Cloud IRM 统一处理值班、警报和事件响应。",
       "irm-card-item-1": "使用您的日历或 Terraform 管理值班时间表。",
       "irm-card-item-2": "通过网络、应用、Slack 或其他渠道响应事件。",
-      "irm-card-item-3": "使用 AI 驱动的 Grafana SIFT 查明根本原因。",
+      "irm-card-item-3": "使用 AI 驱动的 Grafnaut SIFT 查明根本原因。",
       "irm-card-item-4": "分析过去的事故，以提高响应能力和复原力。",
       "irm-card-title": "事故响应和管理",
       "label-get-started": "开始操作",
@@ -1573,7 +1573,7 @@
         "no-rules-body-yaml": "没有要导入的规则。请选择不同的 yaml 文件。",
         "no-rules-title": "没有要导入的规则",
         "not-using-rules-managed-by-integrations-or-plugins": {
-          "text": "不应将由集成或插件管理的规则导入到 Grafana 管理的规则。",
+          "text": "不应将由集成或插件管理的规则导入到 Grafnaut 管理的规则。",
           "title": "信息"
         },
         "plugin-rules-warning": {
@@ -1616,7 +1616,7 @@
         "yaml": "Prometheus YAML 文件",
         "yaml-description": "从 Prometheus YAML 文件导入规则。"
       },
-      "success": "已成功将警报规则导入到 Grafana 管理的规则。",
+      "success": "已成功将警报规则导入到 Grafnaut 管理的规则。",
       "target-folder": {
         "description": "要导入规则的文件夹",
         "label": "目标文件夹"
@@ -1756,7 +1756,7 @@
           "export-rules": "导出规则",
           "loading": "加载中...",
           "new-recording-rule": "新的录制规则",
-          "title": "由 Grafana 管理"
+          "title": "由 Grafnaut 管理"
         },
         "loading-rules_other": "从 {{count}} 个来源加载规则"
       }
@@ -1952,7 +1952,7 @@
       }
     },
     "no-alert-managers-available": {
-      "body-no-alertmanager-found": "我们找不到任何外部的 Alertmanager，您可能无权访问内置的 Grafana Alertmanager。",
+      "body-no-alertmanager-found": "我们找不到任何外部的 Alertmanager，您可能无权访问内置的 Grafnaut Alertmanager。",
       "title-no-alertmanager-found": "未找到 Alertmanager"
     },
     "notification-policies-filter": {
@@ -2039,7 +2039,7 @@
       "alert": {
         "title-errors-loading-rules": "加载规则时出错"
       },
-      "failed-to-load-error": "加载 Grafana 规则状态失败：{{error}}",
+      "failed-to-load-error": "加载 Grafnaut 规则状态失败：{{error}}",
       "text-loading-rules": "正在加载规则...",
       "title-dashboard-not-saved": "数据面板未保存"
     },
@@ -2293,7 +2293,7 @@
       "title-view": "查看"
     },
     "rule-config-status": {
-      "tooltip-min-interval": "在 Grafana 中配置了 <1>{{minInterval}}</1> 的最小评估间隔，将用于替代为规则组配置的 {{ruleInterval}} 间隔。"
+      "tooltip-min-interval": "在 Grafnaut 中配置了 <1>{{minInterval}}</1> 的最小评估间隔，将用于替代为规则组配置的 {{ruleInterval}} 间隔。"
     },
     "rule-details": {
       "keep-firing-for": "保持对此触发：",
@@ -2456,7 +2456,7 @@
       },
       "empty-data-source": "未找到规则",
       "error-button": "错误",
-      "export-all-grafana-rules": "导出所有 Grafana 规则",
+      "export-all-grafana-rules": "导出所有 Grafnaut 规则",
       "filter-view": {
         "cancel-search": "取消搜索",
         "no-more-results": "没有更多结果 – 找到 {{numberOfRules}} 个规则",
@@ -2466,13 +2466,13 @@
       },
       "import-to-gma": {
         "new-badge": "全新！",
-        "text": "导入到 Grafana 管理的规则"
+        "text": "导入到 Grafnaut 管理的规则"
       },
       "loading-more-groups": "正在加载更多组...",
       "more": "更多",
       "new-alert-rule": "新建警报规则",
       "new-datasource-recording-rule": "新的数据源录制规则",
-      "new-grafana-recording-rule": "新的 Grafana 录制规则",
+      "new-grafana-recording-rule": "新的 Grafnaut 录制规则",
       "new-rule-for-export": "用于导出的新警报规则",
       "pagination": {
         "next-page": "显示更多..."
@@ -2490,8 +2490,8 @@
     },
     "rule-list-errors": {
       "cloud-rulessource-errors-title-errors-loading-rules": "加载规则时出错",
-      "failed-to-load-grafana-rules-config": "加载 Grafana 规则配置失败：",
-      "failed-to-load-grafana-rules-state": "加载 Grafana 规则状态失败",
+      "failed-to-load-grafana-rules-config": "加载 Grafnaut 规则配置失败：",
+      "failed-to-load-grafana-rules-state": "加载 Grafnaut 规则状态失败",
       "failed-to-load-rules-config": "加载来自 <2>{{dataSource}}</2> 的规则配置失败",
       "failed-to-load-rules-state": "加载来自 <2>{{dataSource}}</2> 的规则状态失败",
       "unknown-error": "未知错误。",
@@ -2509,7 +2509,7 @@
       "text-loading-the-rule": "正在加载规则...",
       "title-cannot-exist": "无法加载规则。规则不存在",
       "title-cannot-load-modify-export": "无法加载修改导出",
-      "title-grafanamanaged-alert": "此规则不是 Grafana 管理的警报规则",
+      "title-grafanamanaged-alert": "此规则不是 Grafnaut 管理的警报规则",
       "title-unknown-error": "未知错误"
     },
     "rule-state": {
@@ -2608,13 +2608,13 @@
         "placeholder-namespace": "选择命名空间",
         "placeholder-search-input": "按名称搜索或输入筛选条件查询……"
       },
-      "grafana-folder": "Grafana 文件夹",
+      "grafana-folder": "Grafnaut 文件夹",
       "health": "健康",
       "label": {
         "hide": "隐藏",
         "show": "显示"
       },
-      "manage-alerts": "在这些数据源中，您可以选择通过警报用户界面管理警报，以便能够在 Grafana 用户界面以及在其配置所在的数据源中管理这些警报规则。",
+      "manage-alerts": "在这些数据源中，您可以选择通过警报用户界面管理警报，以便能够在 Grafnaut 用户界面以及在其配置所在的数据源中管理这些警报规则。",
       "placeholder-all-data-sources": "所有数据源",
       "placeholder-contact-point": "选择联络点",
       "placeholder-data-sources": "选择数据源",
@@ -2747,16 +2747,16 @@
     "smart-alert-type-detector": {
       "data-source-managed": "由数据源管理",
       "data-sourcemanaged-alert-rules": "数据源管理的警报规则",
-      "data-sourcemanaged-alert-rules-description": "数据源管理的警报规则可用于 Grafana Mimir 或 Grafana Loki 数据源，这两个数据源已配置为支持规则创建。不支持使用表达式或多个查询。",
-      "grafana-managed": "由 Grafana 管理",
-      "grafanamanaged-alert-rules": "Grafana 管理的警报规则",
-      "grafanamanaged-alert-rules-description": "通过 Grafana 管理的警报规则，您可以创建可对我们支持的任何数据源的数据采取行动的警报，包括在同一规则中使用多个数据源。您还可以添加表达式来转换数据并设置警报条件。也支持在警报通知中使用图像。",
+      "data-sourcemanaged-alert-rules-description": "数据源管理的警报规则可用于 Grafnaut Mimir 或 Grafana Loki 数据源，这两个数据源已配置为支持规则创建。不支持使用表达式或多个查询。",
+      "grafana-managed": "由 Grafnaut 管理",
+      "grafanamanaged-alert-rules": "Grafnaut 管理的警报规则",
+      "grafanamanaged-alert-rules-description": "通过 Grafnaut 管理的警报规则，您可以创建可对我们支持的任何数据源的数据采取行动的警报，包括在同一规则中使用多个数据源。您还可以添加表达式来转换数据并设置警报条件。也支持在警报通知中使用图像。",
       "rule-type": "规则类型",
       "rule-type-cannot-be-changed": "无法更改现有规则的警报规则类型。",
-      "rule-type-grafana-managed": "根据所选数据源，此警报规则将由 Grafana 管理。",
+      "rule-type-grafana-managed": "根据所选数据源，此警报规则将由 Grafnaut 管理。",
       "select-where-alert-managed": "选择警报规则的管理位置。",
-      "switch-to-data-source-managed": "您在查询中选择的数据源支持警报规则管理。如果您希望警报规则由数据源而不是 Grafana 管理，请切换到数据源管理。",
-      "switch-to-grafana-managed": "切换到 Grafana 管理，以使用表达式、多个查询、通知中的图像和各种其他功能。",
+      "switch-to-data-source-managed": "您在查询中选择的数据源支持警报规则管理。如果您希望警报规则由数据源而不是 Grafnaut 管理，请切换到数据源管理。",
+      "switch-to-grafana-managed": "切换到 Grafnaut 管理，以使用表达式、多个查询、通知中的图像和各种其他功能。",
       "title-alert-rule-types": "警报规则类型"
     },
     "state-history": {
@@ -2849,7 +2849,7 @@
         "goto-docs": "通知模板文档"
       },
       "help": {
-        "intro": "通知模板使用 Go 模板语言来创建通知消息。\n\n在 Grafana，模板组可以使用 {{ define \"<NAME>\" }} 定义多个通知模板。\n然后，可以通过调用 {{ template \"<NAME>\" }} 在联络点和其他通知模板中使用这些模板。\n有关通知模板的详细信息，请参阅我们的文档。"
+        "intro": "通知模板使用 Go 模板语言来创建通知消息。\n\n在 Grafnaut，模板组可以使用 {{ define \"<NAME>\" }} 定义多个通知模板。\n然后，可以通过调用 {{ template \"<NAME>\" }} 在联络点和其他通知模板中使用这些模板。\n有关通知模板的详细信息，请参阅我们的文档。"
       },
       "misconfigured-badge-text": "配置错误",
       "misconfigured-warning": "此模板配置错误。",
@@ -2925,7 +2925,7 @@
     },
     "to-gma": {
       "confirm-modal": {
-        "body": "目标文件夹不为空，某些规则可能会被覆盖或移除。您确定要将这些警报规则导入到 Grafana 管理的规则吗？",
+        "body": "目标文件夹不为空，某些规则可能会被覆盖或移除。您确定要将这些警报规则导入到 Grafnaut 管理的规则吗？",
         "summary": "将导入以下警报规则：",
         "title-warning": "警告"
       }
@@ -3031,7 +3031,7 @@
     },
     "use-edit-configuration-drawer": {
       "drawer": {
-        "internal-grafana-alertmanager-title": "Grafana 内置 Alertmanager",
+        "internal-grafana-alertmanager-title": "Grafnaut 内置 Alertmanager",
         "label-json-model": "JSON 模型",
         "label-versions": "版本",
         "title-edit-the-alertmanager-configuration": "编辑 Alertmanager 配置",
@@ -3083,7 +3083,7 @@
     "description-alert-instance-label": "使用标签查询筛选警报实例，例如：Monitoring{severity=\"critical\", instance=~\"cluster-us-.+\"}",
     "description-alert-name": "筛选包含此文本的警报",
     "description-datasource": "从警报源筛选",
-    "description-folder": "筛选所选文件夹中的警报（仅适用于 Grafana 管理的警报规则）",
+    "description-folder": "筛选所选文件夹中的警报（仅适用于 Grafnaut 管理的警报规则）",
     "description-group-by": "使用标签查询筛选警报",
     "description-group-mode": "如何对警报实例进行分组",
     "description-max-items": "可显示的最大警报数",
@@ -3229,7 +3229,7 @@
     "auth-drawer-unconnected": {
       "advanced-auth": "高级身份验证",
       "enable-insecure-email-lookup": "启用不安全的电子邮件查找",
-      "enable-insecure-email-lookup-description": "允许用户使用相同的电子邮件地址登录不同身份提供商的 Grafana。",
+      "enable-insecure-email-lookup-description": "允许用户使用相同的电子邮件地址登录不同身份提供商的 Grafnaut。",
       "reset": "重置",
       "reset-tooltip": "此操作将忽略所有已保存的更改，并从配置文件加载配置。",
       "title-auth-settings": "身份验证设置"
@@ -3245,9 +3245,9 @@
       }
     },
     "fields": {
-      "allow-assign-grafana-admin-description": "如果启用，它将自动同步 Grafana 服务器管理员角色。",
-      "allow-assign-grafana-admin-label": "允许分配 Grafana 管理员",
-      "allow-sign-up-description": "如果未启用，则只有现有 Grafana 用户可以使用 OAuth 登录。",
+      "allow-assign-grafana-admin-description": "如果启用，它将自动同步 Grafnaut 服务器管理员角色。",
+      "allow-assign-grafana-admin-label": "允许分配 Grafnaut 管理员",
+      "allow-sign-up-description": "如果未启用，则只有现有 Grafnaut 用户可以使用 OAuth 登录。",
       "allow-sign-up-label": "允许注册",
       "allowed-domains-description": "以逗号或空格分隔的网域列表。用户应至少属于\n一个网域才能登录。",
       "allowed-domains-label": "允许的网域",
@@ -3284,11 +3284,11 @@
       "email-attribute-path-label": "电子邮箱属性路径",
       "federated-credential-audience-description": "OAuth2 应用的联合身份凭证的受众。",
       "federated-credential-audience-label": "FIC 受众",
-      "force-use-graph-api-description": "如果启用，Grafana 将使用 Microsoft Graph API 获取用户的组。",
+      "force-use-graph-api-description": "如果启用，Grafnaut 将使用 Microsoft Graph API 获取用户的组。",
       "force-use-graph-api-label": "强制使用 Graph API",
       "groups-attribute-path-description": "用于用户组查找的 JMESPath 表达式。如果配置了“{{ allowedGroupsLabel }}”，\n则还必须配置“{{ groupsAttributePathLabel }}”。",
       "groups-attribute-path-label": "组属性路径",
-      "hosted-domain-description": "托管并可访问 Grafana 的域。",
+      "hosted-domain-description": "托管并可访问 Grafnaut 的域。",
       "hosted-domain-label": "托管域",
       "id-token-attribute-name-description": "用于从返回的 OAuth2 令牌中提取 ID 令牌的密钥的名称。",
       "id-token-attribute-name-label": "ID 令牌属性名称",
@@ -3313,20 +3313,20 @@
       "organization-mapping-label": "组织映射",
       "organization-mapping-placeholder": "输入映射m (y-team:1:Viewer...) 并按 Enter 键添加",
       "required": "此字段为必填",
-      "role-attribute-path-description": "用于 Grafana 角色查找的{{ jmesPathLabel }}表达式。",
+      "role-attribute-path-description": "用于 Grafnaut 角色查找的{{ jmesPathLabel }}表达式。",
       "role-attribute-path-label": "角色属性路径",
-      "role-attribute-strict-description": "如果启用，当无法通过角色属性路径提取 Grafana 角色时，将拒绝用户登录。",
+      "role-attribute-strict-description": "如果启用，当无法通过角色属性路径提取 Grafnaut 角色时，将拒绝用户登录。",
       "role-attribute-strict-label": "角色属性严格模式",
       "scopes-description": "以逗号或空格分隔的 OAuth2 {{ scopesLabel }} 的列表。",
       "section-extra-security": "额外的安全措施",
       "section-general-settings": "一般设置",
       "section-user-mapping": "用户映射",
       "server-discovery-url-description": "IdP 的 .well-known/openid-configuration 端点。从此网址中提取的信息将用于填充“{{ authURLLabel }}”、“{{ tokenURLLabel }}”和“{{ apiURLLabel }}”字段。",
-      "signout-redirect-url-description": "从 Grafana 退出登录后将用户重定向到的网址。",
+      "signout-redirect-url-description": "从 Grafnaut 退出登录后将用户重定向到的网址。",
       "signout-redirect-url-label": "退出登录重定向网址",
       "skip-org-role-sync-description": "防止从您的 IdP 同步用户的组织角色。",
       "skip-org-role-sync-label": "跳过组织角色同步",
-      "team-ids-attribute-path-description": "用于在“{{ teamsURLLabel }}”端点返回的结果中查找 Grafana 团队 ID 的 JMESPath 表达式。",
+      "team-ids-attribute-path-description": "用于在“{{ teamsURLLabel }}”端点返回的结果中查找 Grafnaut 团队 ID 的 JMESPath 表达式。",
       "team-ids-attribute-path-label": "团队 ID 属性路径",
       "team-ids-attribute-path-required": "如果配置了“{{ teamIDsLabel }}”，则必须设置此字段。",
       "team-ids-description": "如果设置，则用户必须是给定团队之一的成员才能登录。",
@@ -3340,21 +3340,21 @@
       "teams-url-description-oauth": "如果配置了“{{ teamsURLLabel }}”，则还必须配置“{{ teamIDsAttributePathLabel }}”。",
       "teams-url-label": "Teams 网址",
       "teams-url-required": "如果配置了“{{ teamIDsLabel }}”，则必须设置此字段，并且它必须是有效的 URL。",
-      "tls-client-ca-description": "受信任证书颁发机构列表的文件路径。不适用于 Grafana Cloud。",
+      "tls-client-ca-description": "受信任证书颁发机构列表的文件路径。不适用于 Grafnaut Cloud。",
       "tls-client-ca-label": "TLS 客户端 CA",
-      "tls-client-cert-description": "证书的文件路径。不适用于 Grafana Cloud。",
+      "tls-client-cert-description": "证书的文件路径。不适用于 Grafnaut Cloud。",
       "tls-client-cert-label": "TLS 客户端证书",
-      "tls-client-key-description": "密钥的文件路径。不适用于 Grafana Cloud。",
+      "tls-client-key-description": "密钥的文件路径。不适用于 Grafnaut Cloud。",
       "tls-client-key-label": "TLS 客户端密钥",
       "tls-skip-verify-description": "如果启用，客户端将接受服务器提供的任何证书以及\n该证书中的任何主机名。您应该仅将此用于测试，因为此模式\n会使 SSL/TLS 容易受到中间人攻击。",
       "tls-skip-verify-label": "跳过 TLS 验证",
       "token-url-description": "OAuth2 提供程序的令牌端点。",
       "token-url-required": "此字段为必填，并且必须是有效的网址。",
-      "use-pkce-description": "如果启用，Grafana 将使用<2>代码交换的证明密钥 (PKCE)</2> 与 OAuth2 身份验证代码授予。",
+      "use-pkce-description": "如果启用，Grafnaut 将使用<2>代码交换的证明密钥 (PKCE)</2> 与 OAuth2 身份验证代码授予。",
       "use-pkce-label": "使用 PKCE",
-      "use-refresh-token-description": "如果启用，Grafana 将使用 OAuth2 提供程序提供的刷新令牌获取新的访问令牌。",
+      "use-refresh-token-description": "如果启用，Grafnaut 将使用 OAuth2 提供程序提供的刷新令牌获取新的访问令牌。",
       "use-refresh-token-label": "使用刷新令牌",
-      "validate-hosted-domain-description": "如果启用，Grafana 将把从 Google ID 令牌检索到的托管域与用户指定的“{{ allowedDomainsLabel }}”列表进行匹配。",
+      "validate-hosted-domain-description": "如果启用，Grafnaut 将把从 Google ID 令牌检索到的托管域与用户指定的“{{ allowedDomainsLabel }}”列表进行匹配。",
       "validate-hosted-domain-label": "验证托管域",
       "workload-identity-token-file-description": "用于对 OAuth2 提供程序进行身份验证的令牌文件的文件路径。仅当客户端身份验证设置为“workload_identity”时，才需要此项。默认值为 /var/run/secrets/azure/tokens/azure-identity-token。",
       "workload-identity-token-file-label": "{{ workloadIdentityLabel }} 令牌文件",
@@ -3385,7 +3385,7 @@
       "enabled-label-enabled": "已启用",
       "label-enabled": "已启用",
       "reset-configuration": "您确定要重置此配置吗？",
-      "reset-configuration-description": "重置这些设置后，Grafana 将使用系统中的提供方配置（配置文件/环境变量）（如有）。",
+      "reset-configuration-description": "重置这些设置后，Grafnaut 将使用系统中的提供方配置（配置文件/环境变量）（如有）。",
       "save": "保存",
       "save-and-enable": "保存并启用",
       "saving": "正在保存...",
@@ -4183,11 +4183,11 @@
     "cloud": {
       "connections-home-page": {
         "add-new-connection": {
-          "subtitle": "通过数据源、集成和应用将数据连接到 Grafana",
+          "subtitle": "通过数据源、集成和应用将数据连接到 Grafnaut",
           "title": "添加新连接"
         },
         "collector": {
-          "subtitle": "管理 Grafana Alloy（我们定制的 OpenTelemetry 收集器发行版）的配置",
+          "subtitle": "管理 Grafnaut Alloy（我们定制的 OpenTelemetry 收集器发行版）的配置",
           "title": ""
         },
         "data-sources": {
@@ -4202,7 +4202,7 @@
           "subtitle": "管理数据源的专用网络连接",
           "title": "私有数据源连接"
         },
-        "subtitle": "使用数据源、集成和应用将您的基础架构连接到 Grafana Cloud。使用此页面添加，以管理从数据摄取到私有连接和遥测管道的所有内容。"
+        "subtitle": "使用数据源、集成和应用将您的基础架构连接到 Grafnaut Cloud。使用此页面添加，以管理从数据摄取到私有连接和遥测管道的所有内容。"
       }
     },
     "connect-data": {
@@ -4251,7 +4251,7 @@
       }
     },
     "no-access-modal": {
-      "connection-contact-grafana-admin": "要添加新的关联，请与您的 Grafana 管理员联系。",
+      "connection-contact-grafana-admin": "要添加新的关联，请与您的 Grafnaut 管理员联系。",
       "editor-warning": "编辑者无法添加新的关联。您可以检查它是否已在<2>数据源</2>中配置。",
       "links": "链接",
       "okay": "好的"
@@ -4357,7 +4357,7 @@
       "next-button": "下一步",
       "save-button": "保存"
     },
-    "page-content": "要启用 Correlations，请将其在 Grafana 配置中添加：",
+    "page-content": "要启用 Correlations，请将其在 Grafnaut 配置中添加：",
     "page-heading": "Correlations 已禁用",
     "query-editor": {
       "control-rules": "选定的目标数据源必须导出查询编辑器。",
@@ -4446,7 +4446,7 @@
       "visualization": "可视化"
     },
     "alert-rules-drawer": {
-      "redirect-link": "Grafana Alerting 中的列表",
+      "redirect-link": "Grafnaut Alerting 中的列表",
       "subtitle": "与此仪表板相关的警报规则"
     },
     "annotation-settings-edit": {
@@ -4648,7 +4648,7 @@
       }
     },
     "dashboard-validation": {
-      "body-dashboard-failed-schema-validation": "验证是为了开发目的而提供的，应该可以正常忽略。如果您是 Grafana 开发人员，请考虑检查和更新数据面板架构",
+      "body-dashboard-failed-schema-validation": "验证是为了开发目的而提供的，应该可以正常忽略。如果您是 Grafnaut 开发人员，请考虑检查和更新数据面板架构",
       "title-checking-dashboard-validity": "检查数据面板有效性",
       "title-dashboard-failed-schema-validation": "数据面板架构验证失败",
       "title-error-checking-dashboard-validity": "检查数据面板有效性时出错"
@@ -4839,7 +4839,7 @@
     },
     "gen-aihistory": {
       "aria-label-send-custom-feedback": "发送自定义反馈",
-      "footer-text": "此内容使用 <2>Grafana LLM 插件</2>通过 AI 生成",
+      "footer-text": "此内容使用 <2>Grafnaut LLM 插件</2>通过 AI 生成",
       "placeholder-tell-ai-what-to-do-next": "告诉 AI 下一步该做什么..."
     },
     "general-settings-unconnected": {
@@ -5272,7 +5272,7 @@
     "save-dashboard-diff": {
       "full-json-diff": "完整 JSON 差异",
       "no-changes-in-the-dashboard-json": "数据面板 JSON 中没有变化",
-      "title-because-dashboard-migrated-grafana-format": "由于数据面板已迁移到新的 Grafana 数据面板格式，因此难以读取差异信息",
+      "title-because-dashboard-migrated-grafana-format": "由于数据面板已迁移到新的 Grafnaut 数据面板格式，因此难以读取差异信息",
       "title-folder": "文件夹"
     },
     "save-dashboard-drawer": {
@@ -5300,7 +5300,7 @@
     },
     "save-provisioned-dashboard-form": {
       "cancel": "取消",
-      "cannot-be-saved": "此数据面板无法从 Grafana 用户界面保存，因为它已从其他来源预配。复制 JSON 或将其保存到下面的文件中，然后您可以在预配源中更新您的数据面板。",
+      "cannot-be-saved": "此数据面板无法从 Grafnaut 用户界面保存，因为它已从其他来源预配。复制 JSON 或将其保存到下面的文件中，然后您可以在预配源中更新您的数据面板。",
       "copy-json-to-clipboard": "将 JSON 复制到剪贴板",
       "file-path": "",
       "save-json-to-file": "将 JSON 保存到文件",
@@ -5545,7 +5545,7 @@
       }
     },
     "validation": {
-      "invalid-dashboard-id": "找不到有效的 Grafana.com ID",
+      "invalid-dashboard-id": "找不到有效的 Grafnaut.com ID",
       "invalid-json": "无有效的 JSON",
       "tags-expected-array": "标签预期数组",
       "tags-expected-strings": "标签预期字符串数组"
@@ -5631,8 +5631,8 @@
     "gcom-field": {
       "label": "在<1></1>查找并导入常见应用程序的仪表板",
       "load-button": "加载",
-      "placeholder": "Grafana.com 仪表板网址或 ID",
-      "validation-required": "Grafana 仪表板网址或 ID 是必需项"
+      "placeholder": "Grafnaut.com 仪表板网址或 ID",
+      "validation-required": "Grafnaut 仪表板网址或 ID 是必需项"
     },
     "json-field": {
       "label": "通过仪表板 JSON 模型导入",
@@ -5775,7 +5775,7 @@
       "type": "类型"
     },
     "dashboard-preview-banner": {
-      "not-yet-saved": "该值未保存在 Grafana 数据库中",
+      "not-yet-saved": "该值未保存在 Grafnaut 数据库中",
       "title-dashboard-loaded-external-repository": "此数据面板从外部存储库加载",
       "title-error-loading-dashboard": "加载数据面板时出错"
     },
@@ -5946,7 +5946,7 @@
       "title-complete-git-hub-comment-clipboard": "将完整的 GitHub 评论复制到剪贴板",
       "title-get-help-with-this-panel": "获取此面板的帮助",
       "troubleshooting-docs": "故障排除文档",
-      "troubleshooting-request-help": "要请求故障排除帮助，请将此面板的快照发送给 Grafana Labs 技术支持。快照包含查询响应数据和面板设置。"
+      "troubleshooting-request-help": "要请求故障排除帮助，请将此面板的快照发送给 Grafnaut Labs 技术支持。快照包含查询响应数据和面板设置。"
     },
     "import-dashboard-form-v2": {
       "cancel": "取消",
@@ -6000,7 +6000,7 @@
       "file-load-error": "加载数据面板时出错",
       "loading-dashboard-data": "",
       "move-action": "移动数据面板",
-      "move-read-only-message": "此数据面板无法直接从 Grafana 移动，因为存储库为只读。要移动此数据面板，请移动 Git 存储库中的文件。",
+      "move-read-only-message": "此数据面板无法直接从 Grafnaut 移动，因为存储库为只读。要移动此数据面板，请移动 Git 存储库中的文件。",
       "moving": "正在移动…",
       "success-message": "数据面板已成功移动",
       "target-path-label": "目标路径",
@@ -6033,7 +6033,7 @@
       "alert": {
         "title-errors-loading-rules": "加载规则时出错"
       },
-      "error-failed-to-load": "加载 Grafana 规则状态失败：{{errorToDisplay}}",
+      "error-failed-to-load": "加载 Grafnaut 规则状态失败：{{errorToDisplay}}",
       "text-loading-rules": "正在加载规则...",
       "title-dashboard-not-saved": "数据面板未保存"
     },
@@ -6090,7 +6090,7 @@
       "title-close": "关闭"
     },
     "provisioned-delete-modal": {
-      "cannot-be-deleted": "此数据面板由 Grafana 配置管理，无法删除。从配置文件中移除数据面板以将其删除。",
+      "cannot-be-deleted": "此数据面板由 Grafnaut 配置管理，无法删除。从配置文件中移除数据面板以将其删除。",
       "file-path": "文件路径：{{dashboardId}}",
       "ok": "好",
       "see-docs": "有关预配的更多信息，请参阅<2>文档<2/>。",
@@ -6154,7 +6154,7 @@
     },
     "save-dashboard-form": {
       "aria-label-message": "消息",
-      "body-dashboard-drastically-changed": "数据面板将使用新的实验性 Grafana 数据面板架构保存。此操作无法还原，可能会导致不可逆转的数据丢失。我们建议您将此数据面板另存为副本。如果您在生产环境中看到此消息，请联系支持部门以禁用此功能。",
+      "body-dashboard-drastically-changed": "数据面板将使用新的实验性 Grafnaut 数据面板架构保存。此操作无法还原，可能会导致不可逆转的数据丢失。我们建议您将此数据面板另存为副本。如果您在生产环境中看到此消息，请联系支持部门以禁用此功能。",
       "cancel-button": {
         "cancel": "取消"
       },
@@ -6194,7 +6194,7 @@
     "save-provisioned-dashboard-form": {
       "api-error": "保存数据面板时出错",
       "cancel": "取消",
-      "cannot-be-saved": "此数据面板无法从 Grafana 用户界面保存，因为它已从其他来源预配。复制 JSON 或将其保存到下面的文件中，然后您可以在预配源中更新您的数据面板。",
+      "cannot-be-saved": "此数据面板无法从 Grafnaut 用户界面保存，因为它已从其他来源预配。复制 JSON 或将其保存到下面的文件中，然后您可以在预配源中更新您的数据面板。",
       "copy-json-to-clipboard": "将 JSON 复制到剪贴板",
       "file-path": "",
       "label-description": "描述",
@@ -6401,7 +6401,7 @@
     }
   },
   "dashboard-scene-help-wizard": {
-    "support-bundle": "您还可以在<1>支持包部分</1>中检索包含有关 Grafana 实例和已配置数据源信息的支持包。"
+    "support-bundle": "您还可以在<1>支持包部分</1>中检索包含有关 Grafnaut 实例和已配置数据源信息的支持包。"
   },
   "dashboard-settings": {
     "annotations": {
@@ -6444,7 +6444,7 @@
     },
     "provisioned-delete-modal": {
       "confirm-button": "好",
-      "text-1": "此数据面板由 Grafana 配置管理，无法删除。从配置文件中移除数据面板以将其删除。",
+      "text-1": "此数据面板由 Grafnaut 配置管理，无法删除。从配置文件中移除数据面板以将其删除。",
       "text-2": "",
       "text-3": "文件路径：{{provisionedId}}",
       "text-link": "前往文档页面",
@@ -7086,7 +7086,7 @@
       "tooltip-content-outline": "内容大纲"
     },
     "feature-toggle-page": {
-      "description-explore-disabled": "要启用 Explore，请在 Grafana 配置中启用该选项：",
+      "description-explore-disabled": "要启用 Explore，请在 Grafnaut 配置中启用该选项：",
       "title-explore-disabled": "Explore 已禁用"
     },
     "get-field-links-for-explore": {
@@ -7282,7 +7282,7 @@
       "displaying-queries_other": ""
     },
     "rich-history-settings-tab": {
-      "alert-info": "Grafana 将最多保留 {{optionLabel}} 的条目。标有星标的条目不会被删除。",
+      "alert-info": "Grafnaut 将最多保留 {{optionLabel}} 的条目。标有星标的条目不会被删除。",
       "change-default-tab": "将默认活动选项卡从“查询历史记录”更改为“星标”",
       "clear-history-info": "永久删除您所有的查询历史记录。",
       "clear-query-history": "清除查询历史记录",
@@ -7291,7 +7291,7 @@
       "delete-confirm-text": "您确定是否要永久删除您的查询历史记录？",
       "delete-title": "删除",
       "history-time-span": "历史记录时间范围",
-      "history-time-span-description": "选择 Grafana 将保存您查询历史记录的时间段。将存储最多 {{MAX_HISTORY_ITEMS}} 个条目。",
+      "history-time-span-description": "选择 Grafnaut 将保存您查询历史记录的时间段。将存储最多 {{MAX_HISTORY_ITEMS}} 个条目。",
       "only-show-active-datasource": "只显示当前在 浏览 中活动状态数据源的查询",
       "query-history-deleted": "查询历史记录已删除",
       "retention-period": {
@@ -7493,7 +7493,7 @@
       "share-tooltip": "共享跟踪",
       "start-time": "开始时间",
       "target": "目标",
-      "title-share-thoughts-about-tracing-grafana": "分享您对 Grafana 跟踪功能的看法。",
+      "title-share-thoughts-about-tracing-grafana": "分享您对 Grafnaut 跟踪功能的看法。",
       "tooltip-url": "{{route}} 或 {{url}} 或 {{target}} 或 {{path}}",
       "trace-id": "跟踪 ID",
       "url": "URL"
@@ -7631,7 +7631,7 @@
     "sql-expr": {
       "button-run-query": "运行查询",
       "modal-title": "SQL 编辑器",
-      "tooltip-experimental": "SQL 表达式 LLM 集成是实验性的。若有任何问题，请向 Grafana 团队报告。"
+      "tooltip-experimental": "SQL 表达式 LLM 集成是实验性的。若有任何问题，请向 Grafnaut 团队报告。"
     },
     "threshold": {
       "label-input": "输入"
@@ -7670,7 +7670,7 @@
       "submit-button": "提交",
       "tooltip-skip-button": "如果跳过，系统将在您下次登录时提示您更改密码。"
     },
-    "contact-admin": "忘记了用户名或邮箱？请与您的 Grafana 管理员联系。",
+    "contact-admin": "忘记了用户名或邮箱？请与您的 Grafnaut 管理员联系。",
     "email-sent": "一封包含重置链接的电子邮件已发送到您的电子邮箱。您很快就会收到它。",
     "reset-password-header": "重置密码",
     "send-email-button": "发送重置电子邮件",
@@ -7891,7 +7891,7 @@
     }
   },
   "get-enterprise": {
-    "requires-license": "需要 Grafana 企业版许可证",
+    "requires-license": "需要 Grafnaut 企业版许可证",
     "title": "企业"
   },
   "gettingstarted": {
@@ -7939,7 +7939,7 @@
     "use-get-essentials-configuration": {
       "essential-content": {
         "description": {
-          "configure-grafana-alerting": "配置 Grafana 警报",
+          "configure-grafana-alerting": "配置 Grafnaut 警报",
           "create-integration-alerting-contact-point": "为警报联络点创建 IRM 集成。",
           "initialize-incident-plugin-declare-manage-incidents": "初始化 Incident 插件以声明和管理事故。",
           "practice-solving-an-incident": "练习解决事故",
@@ -8634,7 +8634,7 @@
       "access-help-title": "访问帮助",
       "access-label": "访问",
       "allowed-cookies": "允许的 Cookie",
-      "allowed-cookies-description": "Grafana 代理默认情况下会删除转发的 Cookie。按名称指定应转发到数据源的 Cookie。",
+      "allowed-cookies-description": "Grafnaut 代理默认情况下会删除转发的 Cookie。按名称指定应转发到数据源的 Cookie。",
       "auth": "身份验证",
       "azure-auth-label": "Azure 身份验证",
       "azure-auth-tooltip": "对 Azure 端点使用 Azure 身份验证。",
@@ -8647,8 +8647,8 @@
       "direct-url-tooltip": "您的访问方式是<1>浏览器</1>，这意味着需要从浏览器访问 URL。",
       "heading": "HTTP",
       "invalid-url-error": "URL 无效",
-      "proxy-url-tooltip": "您的访问方式是<1>服务器</1>，这意味着需要从 grafana 后端/服务器访问 URL。",
-      "server-mode-description": "所有请求都将从浏览器发送到 Grafana 后端/服务器，后端/服务器会将请求转发到数据源，从而绕过可能存在的跨来源资源共享 (CORS) 要求。如果选择此访问模式，则需要从 grafana 后端/服务器访问 URL。",
+      "proxy-url-tooltip": "您的访问方式是<1>服务器</1>，这意味着需要从 grafnaut 后端/服务器访问 URL。",
+      "server-mode-description": "所有请求都将从浏览器发送到 Grafnaut 后端/服务器，后端/服务器会将请求转发到数据源，从而绕过可能存在的跨来源资源共享 (CORS) 要求。如果选择此访问模式，则需要从 grafnaut 后端/服务器访问 URL。",
       "server-mode-label": "服务器（默认）",
       "server-mode-title": "<0>服务器访问模式（默认）：</0>",
       "sigv4-auth-label": "SigV4 身份验证",
@@ -8679,7 +8679,7 @@
       "tls-client-key-placeholder": "开头为 {{privateKeyBeginsWith}}",
       "tls-heading": "TLS/SSL 身份验证详细信息",
       "tls-server-name-label": "ServerName",
-      "tls-tooltip": "TLS/SSL 证书已加密并存储在 Grafana 数据库中。"
+      "tls-tooltip": "TLS/SSL 证书已加密并存储在 Grafnaut 数据库中。"
     },
     "date-time-picker": {
       "apply": "应用",
@@ -9173,8 +9173,8 @@
   "help-wizard": {
     "download-snapshot": "下载快照 ({{snapshotSize}})",
     "github-comment": "复制 Github 评论",
-    "support-bundle": "您还可以在<1>支持包部分</1>中检索包含有关 Grafana 实例和已配置数据源信息的支持包。",
-    "troubleshooting-help": "要请求故障排除帮助，请将此面板的快照发送给 Grafana Labs 技术支持。快照包含查询响应数据和面板设置。"
+    "support-bundle": "您还可以在<1>支持包部分</1>中检索包含有关 Grafnaut 实例和已配置数据源信息的支持包。",
+    "troubleshooting-help": "要请求故障排除帮助，请将此面板的快照发送给 Grafnaut Labs 技术支持。快照包含查询响应数据和面板设置。"
   },
   "histogram": {
     "category-histogram": "直方图",
@@ -9203,7 +9203,7 @@
     "query": {
       "collapse-all": "折叠全部",
       "copy-to-clipboard": "复制到剪贴板",
-      "description": "查询查看器允许您查看原始请求和响应。要收集此数据，Grafana 需要发布新查询。请点击下面的刷新按钮触发一个新查询。",
+      "description": "查询查看器允许您查看原始请求和响应。要收集此数据，Grafnaut 需要发布新查询。请点击下面的刷新按钮触发一个新查询。",
       "expand-all": "展开全部",
       "no-data": "尚未收集任何请求和响应。请点击刷新按钮",
       "refresh": "刷新"
@@ -9225,8 +9225,8 @@
     },
     "signup-invited-page": {
       "complete-following": "请填写以下内容并选择密码，以接受邀请并继续：",
-      "custom-has-invited-you": "<0>{{invitedBy}}</0> 邀请您加入 Grafana 和 <3>{{orgName}}</3> 组织",
-      "default-has-invited-you": "<0>某人</0> 邀请您加入 Grafana 和 <3>{{orgName}}</3> 组织",
+      "custom-has-invited-you": "<0>{{invitedBy}}</0> 邀请您加入 Grafnaut 和 <3>{{orgName}}</3> 组织",
+      "default-has-invited-you": "<0>某人</0> 邀请您加入 Grafnaut 和 <3>{{orgName}}</3> 组织",
       "greeting-custom": "您好 {{greeting}}。",
       "greeting-default": "嗨，你好。",
       "label-email": "电子邮箱",
@@ -9292,15 +9292,15 @@
     },
     "group-mapping": {
       "grafana-admin": {
-        "description": "如果启用，此群组中的所有用户都将成为 Grafana 管理员",
-        "label": "Grafana 管理员"
+        "description": "如果启用，此群组中的所有用户都将成为 Grafnaut 管理员",
+        "label": "Grafnaut 管理员"
       },
       "group-dn": {
         "description": "用于从返回的 OAuth2 令牌中提取 ID 令牌的密钥的名称。",
         "label": "组专有名称"
       },
       "org-id": {
-        "description": "Grafana 组织数据库 ID。如果留空，将使用默认组织 (ID 1)",
+        "description": "Grafnaut 组织数据库 ID。如果留空，将使用默认组织 (ID 1)",
         "label": "组织 ID"
       },
       "org-role": {
@@ -9314,7 +9314,7 @@
       "add": {
         "button": "添加组映射"
       },
-      "description": "将 LDAP 组映射到 Grafana 组织角色",
+      "description": "将 LDAP 组映射到 Grafnaut 组织角色",
       "group-search-base-dns-label": "组搜索基本专有名称",
       "group-search-base-dns-placeholder": "示例：ou=groups,dc=example,dc=com",
       "group-search-filter-description": "用于筛选和识别目录中的组条目",
@@ -9326,7 +9326,7 @@
       "skip-org-role-sync-label": "跳过组织角色同步"
     },
     "misc-section": {
-      "allow-sign-up-descrition": "如果未启用，则只有现有 Grafana 用户可以使用 LDAP 登录",
+      "allow-sign-up-descrition": "如果未启用，则只有现有 Grafnaut 用户可以使用 LDAP 登录",
       "allow-sign-up-label": "允许注册",
       "label": "其他",
       "port-description": "默认端口是 389（不使用 SSL）或 636（使用 SSL）",
@@ -9353,7 +9353,7 @@
     "bind-dn": {
       "description": "用于绑定和验证 LDAP 服务器的账户的专有名称。",
       "label": "绑定专有名称",
-      "placeholder": "示例：cn=admin,dc=grafana,dc=org"
+      "placeholder": "示例：cn=admin,dc=grafnaut,dc=org"
     },
     "bind-password": {
       "label": "绑定密码"
@@ -9386,7 +9386,7 @@
       "description": "要搜索的基本专有名称数组。",
       "error": "搜索基本专有名称是必填字段",
       "label": "搜索基本专有名称",
-      "placeholder": "示例：dc=grafana,dc=org"
+      "placeholder": "示例：dc=grafnaut,dc=org"
     },
     "subtitle": "",
     "title": "基本设置"
@@ -9496,21 +9496,21 @@
       "title-dashboard-changed": "数据面板已更改"
     },
     "live-channel-editor": {
-      "description-grafana-live": "此功能支持 Grafana 核心中的实时事件流。此功能正在大力开发中。随着该功能逐步面向生产环境，接口和结构可能会发生变化。",
+      "description-grafana-live": "此功能支持 Grafnaut 核心中的实时事件流。此功能正在大力开发中。随着该功能逐步面向生产环境，接口和结构可能会发生变化。",
       "namespace": "命名空间",
       "path": "路径",
       "placeholder-select-watchable-resource": "选择可观看的资源",
       "scope": "范围",
-      "title-grafana-live": "Grafana Live"
+      "title-grafana-live": "Grafnaut Live"
     },
     "live-connection-warning": {
       "title-connection-to-server-is-lost": "与服务器的连接已丢失..."
     },
     "live-panel": {
       "error": "错误",
-      "grafana-requires-feature": "Grafana Live 需要功能标志才能运行",
+      "grafana-requires-feature": "Grafnaut Live 需要功能标志才能运行",
       "panel-editor-channel": "使用面板编辑器选择频道",
-      "title-grafana-live": "Grafana Live",
+      "title-grafana-live": "Grafnaut Live",
       "waiting-for-data": "正在等待数据："
     },
     "live-publish": {
@@ -9557,7 +9557,7 @@
     },
     "signup": {
       "button-label": "注册",
-      "new-to-question": "初次使用 Grafana？"
+      "new-to-question": "初次使用 Grafnaut？"
     }
   },
   "logs": {
@@ -9909,7 +9909,7 @@
       "cancel": "取消",
       "change-uid": "更改 uid",
       "description-library-panels-imported": "将导入的新库面板列表。",
-      "description-unique-identifier-uid": "数据面板的唯一标识符 (UID) 可用于在多个 Grafana 安装之间唯一标识数据面板。UID 允许具有一致的 URL 来访问数据面板，因此更改数据面板的标题不会破坏该数据面板的任何书签链接。",
+      "description-unique-identifier-uid": "数据面板的唯一标识符 (UID) 可用于在多个 Grafnaut 安装之间唯一标识数据面板。UID 允许具有一致的 URL 来访问数据面板，因此更改数据面板的标题不会破坏该数据面板的任何书签链接。",
       "label-existing-library-panels": "现有的库面板",
       "label-folder": "文件夹",
       "label-name": "名称",
@@ -9918,7 +9918,7 @@
       "options": "选项"
     },
     "import-dashboard-overview-un-connected": {
-      "importing-from": "从 <2>Grafana.com</2> 导入数据面板",
+      "importing-from": "从 <2>Grafnaut.com</2> 导入数据面板",
       "published-by": "发布者",
       "updated-on": "更新日期"
     },
@@ -9929,7 +9929,7 @@
     },
     "unthemed-dashboard-import": {
       "subTitle": {
-        "import-dashboard-from-file-or-grafanacom": "从文件或 Grafana.com 导入数据面板"
+        "import-dashboard-from-file-or-grafanacom": "从文件或 Grafnaut.com 导入数据面板"
       },
       "text": {
         "import-dashboard": "导入仪表板"
@@ -9948,19 +9948,19 @@
   },
   "migrate-to-cloud": {
     "build-snapshot": {
-      "description": "此工具可以将某些资源从此安装迁移到您的云堆栈。要开始使用，您需要创建此安装的快照。创建快照通常需要不到两分钟的时间。快照与此 Grafana 安装一起存储。",
+      "description": "此工具可以将某些资源从此安装迁移到您的云堆栈。要开始使用，您需要创建此安装的快照。创建快照通常需要不到两分钟的时间。快照与此 Grafnaut 安装一起存储。",
       "title": "不存在快照",
       "when-complete": "快照完成后，您将能够将其上传到您的云堆栈。"
     },
     "building-snapshot": {
-      "description": "我们正在收集您迁移到 Grafana Cloud 的资源。这应该只需要片刻。",
+      "description": "我们正在收集您迁移到 Grafnaut Cloud 的资源。这应该只需要片刻。",
       "description-eta": "创建快照通常需要不到两分钟的时间。",
       "title": "构建快照"
     },
     "can-i-move": {
-      "body": "您可以使用迁移助手迁移大部分 Grafana 资源。",
-      "link-title": "了解如何迁移到 Grafana Cloud",
-      "title": "在哪里可以了解有关迁移到 Grafana Cloud 的更多信息？"
+      "body": "您可以使用迁移助手迁移大部分 Grafnaut 资源。",
+      "link-title": "了解如何迁移到 Grafnaut Cloud",
+      "title": "在哪里可以了解有关迁移到 Grafnaut Cloud 的更多信息？"
     },
     "configure-snapshot": {
       "description": "选择要在 迁移的快照中包含的资源。",
@@ -9970,12 +9970,12 @@
     },
     "connect-modal": {
       "body-cloud-stack": "您还需要一个云堆栈。如果您刚刚注册，我们会自动创建您的第一个堆栈。 如果您已有帐户，您需要选择或创建一个堆栈。",
-      "body-get-started": "要开始使用，您需要一个 Grafana.com 账户。",
-      "body-sign-up": "注册 Grafana.com 帐户",
-      "body-token": "自我管理的 Grafana 安装需要特殊访问权限才能安全迁移内容。您需要在所选云栈上创建一个迁移令牌。",
+      "body-get-started": "要开始使用，您需要一个 Grafnaut.com 账户。",
+      "body-sign-up": "注册 Grafnaut.com 帐户",
+      "body-token": "自我管理的 Grafnaut 安装需要特殊访问权限才能安全迁移内容。您需要在所选云栈上创建一个迁移令牌。",
       "body-token-field": "迁移令牌",
       "body-token-field-placeholder": "在此粘贴令牌",
-      "body-token-instructions": "登录您的云堆栈，然后导航到“管理” > “常规” >“迁移到 Grafana Cloud”。在该屏幕上创建一个迁移令牌，然后将令牌粘贴到此处。",
+      "body-token-instructions": "登录您的云堆栈，然后导航到“管理” > “常规” >“迁移到 Grafnaut Cloud”。在该屏幕上创建一个迁移令牌，然后将令牌粘贴到此处。",
       "body-view-stacks": "查看我的云堆栈。",
       "cancel": "取消",
       "connect": "连接到这个堆栈",
@@ -9988,15 +9988,15 @@
         "migration-disabled": "此实例上的云迁移已禁用。",
         "session-creation-failure": "创建迁移时出错。请重试。",
         "token-invalid": "令牌无效。在云实例上生成新令牌，然后重试。",
-        "token-not-saved": "保存令牌时出错。有关更多详细信息，请参阅 Grafana 服务器日志。",
-        "token-request-error": "验证令牌时发生错误。请检查 Grafana 实例日志。",
+        "token-not-saved": "保存令牌时出错。有关更多详细信息，请参阅 Grafnaut 服务器日志。",
+        "token-request-error": "验证令牌时发生错误。请检查 Grafnaut 实例日志。",
         "token-validation-failure": "令牌无效。请确保令牌与云实例上的迁移令牌相匹配。"
       },
       "token-required-error": "迁移令牌是必需项"
     },
     "cta": {
       "button": "将此实例迁移到云端",
-      "header": "让我们管理你的 Grafana 堆栈"
+      "header": "让我们管理你的 Grafnaut 堆栈"
     },
     "dashboard-info": {
       "dashboard": "数据面板 {{dashboardUID}}"
@@ -10020,10 +10020,10 @@
       "unable-to-load-folder": "无法加载文件夹"
     },
     "get-started": {
-      "body": "迁移过程必须从您自己管理的 Grafana 实例开始。",
+      "body": "迁移过程必须从您自己管理的 Grafnaut 实例开始。",
       "configure-pdc-link": "配置此堆栈的 PDC",
       "link-title": "了解更多关于私人数据源连接的信息",
-      "step-1": "登录您的自我管理实例，然后导航到“管理” > “常规” >“迁移到 Grafana Cloud”。",
+      "step-1": "登录您的自我管理实例，然后导航到“管理” > “常规” >“迁移到 Grafnaut Cloud”。",
       "step-2": "选择“将此实例迁移到云端”。",
       "step-3": "系统将提示您输入迁移令牌。从此屏幕生成一个。输入您的令牌，然后点击“连接到此堆栈”。",
       "step-4": "连接到云堆栈后，点击“构建快照”以创建自我管理实例的快照。",
@@ -10032,12 +10032,12 @@
       "title": "正在执行迁移"
     },
     "is-it-secure": {
-      "body": "Grafana Labs 致力于维护最高标准的数据隐私和安全。通过实施行业标准的安全技术和程序，我们帮助保护客户的数据免遭未经授权的访问、使用或披露。",
-      "link-title": "Grafana 实验室信任中心",
+      "body": "Grafnaut Labs 致力于维护最高标准的数据隐私和安全。通过实施行业标准的安全技术和程序，我们帮助保护客户的数据免遭未经授权的访问、使用或披露。",
+      "link-title": "Grafnaut 实验室信任中心",
       "title": "它是否安全？"
     },
     "migrate-to-this-stack": {
-      "body": "您可以将某些资源从自行管理的 Grafana 安装安全地迁移到此云堆栈。要开始操作，您需要生成一个迁移令牌。您的自行管理实例将使用该令牌对此云堆栈进行身份验证。",
+      "body": "您可以将某些资源从自行管理的 Grafnaut 安装安全地迁移到此云堆栈。要开始操作，您需要生成一个迁移令牌。您的自行管理实例将使用该令牌对此云堆栈进行身份验证。",
       "link-title": "查看完整的迁移指南",
       "title": "让我们帮助您迁移到此堆栈"
     },
@@ -10062,33 +10062,33 @@
     },
     "onprem": {
       "cancel-snapshot-error-title": "取消创建快照时出错",
-      "create-snapshot-error-duplicate-resource-type": "资源类型重复。有关更多详细信息，请参阅 Grafana 服务器日志",
+      "create-snapshot-error-duplicate-resource-type": "资源类型重复。有关更多详细信息，请参阅 Grafnaut 服务器日志",
       "create-snapshot-error-empty-resource-types": "您需要为快照创建提供至少一个资源类型",
-      "create-snapshot-error-missing-dependency": "缺少依赖。有关更多详细信息，请参阅 Grafana 服务器日志",
+      "create-snapshot-error-missing-dependency": "缺少依赖。有关更多详细信息，请参阅 Grafnaut 服务器日志",
       "create-snapshot-error-title": "创建快照时出错",
-      "create-snapshot-error-unknown-resource-type": "未知资源类型。有关更多详细信息，请参阅 Grafana 服务器日志",
+      "create-snapshot-error-unknown-resource-type": "未知资源类型。有关更多详细信息，请参阅 Grafnaut 服务器日志",
       "disconnect-error-title": "断开连接时出错",
-      "error-see-server-logs": "有关更多详细信息，请参阅 Grafana 服务器日志",
+      "error-see-server-logs": "有关更多详细信息，请参阅 Grafnaut 服务器日志",
       "get-session-error-title": "加载迁移配置时出错",
       "get-snapshot-error-title": "加载快照时出错",
       "migration-finished-with-caveat-title": "资源迁移完成",
       "migration-finished-with-errors-body": "迁移已完成，但某些项目无法迁移到云堆栈。请检查失败的资源，以获取更多详细信息。",
       "migration-finished-with-warnings-body": "迁移已完成，但有一些警告。请检查个别资源，以了解更多详细信息",
-      "snapshot-error-status-body": "创建快照时或开始迁移流程时出错。有关更多详细信息，请参阅 Grafana 服务器日志",
+      "snapshot-error-status-body": "创建快照时或开始迁移流程时出错。有关更多详细信息，请参阅 Grafnaut 服务器日志",
       "snapshot-error-status-title": "迁移资源时出错",
-      "success-message": "已成功将 {{successCount}} 个 {{types, list}} 迁移到您的 Grafana Cloud 实例。",
-      "success-message-generic": "已成功将 {{successCount}} 个资源迁移到您的 Grafana Cloud 实例。",
+      "success-message": "已成功将 {{successCount}} 个 {{types, list}} 迁移到您的 Grafnaut Cloud 实例。",
+      "success-message-generic": "已成功将 {{successCount}} 个资源迁移到您的 Grafnaut Cloud 实例。",
       "success-title": "迁移完成！",
       "upload-snapshot-error-title": "上传快照时出错"
     },
     "pdc": {
-      "body": "将您的数据源暴露在互联网上可能会引发安全问题。专用数据源连接 (PDC) 允许 Grafana Cloud 通过安全的网络隧道访问您的现有数据源。",
+      "body": "将您的数据源暴露在互联网上可能会引发安全问题。专用数据源连接 (PDC) 允许 Grafnaut Cloud 通过安全的网络隧道访问您的现有数据源。",
       "link-title": "了解 PDC",
       "title": "如果我的数据源不是全部都在公共互联网上，该怎么办？"
     },
     "pricing": {
-      "body": "Grafana Cloud 提供宽松的免费计划和 14 天的无限使用试用期。试用到期后，您将根据超出免费计划限制的使用量付费。",
-      "link-title": "Grafana Cloud 价格",
+      "body": "Grafnaut Cloud 提供宽松的免费计划和 14 天的无限使用试用期。试用到期后，您将根据超出免费计划限制的使用量付费。",
+      "link-title": "Grafnaut Cloud 价格",
       "title": "费用如何？"
     },
     "resource-details": {
@@ -10096,16 +10096,16 @@
       "error-messages": {
         "alert-rules-group-quota-reached": "已达到警报规则组的最大数量：请删除一些警报规则组或升级您的套餐，然后重试。",
         "alert-rules-quota-reached": "已达到警报规则的最大数量：请删除一些警报规则或升级您的套餐，然后重试。",
-        "dashboard-already-managed": "数据面板已由 Grafana 在云实例中配置和管理。我们建议您今后使用已配置的数据面板。如果您仍然希望将数据面板复制到云实例，请更改数据面板 JSON 中的数据面板 ID，保存新的快照并再次上传。",
-        "datasource-already-managed": "数据源已由 Grafana 在云实例中配置和管理。如果这是其他资源，请设置另一个 UID，然后重试。",
+        "dashboard-already-managed": "数据面板已由 Grafnaut 在云实例中配置和管理。我们建议您今后使用已配置的数据面板。如果您仍然希望将数据面板复制到云实例，请更改数据面板 JSON 中的数据面板 ID，保存新的快照并再次上传。",
+        "datasource-already-managed": "数据源已由 Grafnaut 在云实例中配置和管理。如果这是其他资源，请设置另一个 UID，然后重试。",
         "datasource-invalid-url": "有一个数据源的 URL 无效。请提供有效的 URL，然后重试。",
         "datasource-name-conflict": "目标实例中有一个同名的数据源。请重命名其中一个，然后重试。",
         "folder-name-conflict": "目标实例中有一个同名的文件夹。请重命名其中一个，然后重试。",
         "generic-error": "迁移时出错。请检查云迁移日志以获取更多信息。",
-        "internal-service-error": "迁移时出错。请查看 Grafana 服务器日志以了解更多详情。",
+        "internal-service-error": "迁移时出错。请查看 Grafnaut 服务器日志以了解更多详情。",
         "library-element-name-conflict": "目标实例中有一个同名的库元素。请重命名其中一个，然后重试。",
-        "resource-conflict": "与目标实例存在资源冲突。请查看 Grafana 服务器日志以了解更多详情。",
-        "unexpected-error": "迁移时出错。请查看 Grafana 服务器日志以了解更多详情。",
+        "resource-conflict": "与目标实例存在资源冲突。请查看 Grafnaut 服务器日志以了解更多详情。",
+        "unexpected-error": "迁移时出错。请查看 Grafnaut 服务器日志以了解更多详情。",
         "unsupported-data-type": "目前不支持此数据类型的迁移。"
       },
       "error-title": "无法迁移此资源：",
@@ -10175,7 +10175,7 @@
       "upload-migration": "上传快照"
     },
     "support-types-disclosure": {
-      "text": "资源已复制到您的 Grafana Cloud 堆栈。<2>了解更多</2>关于全套支持资源和迁移其他设置的信息。"
+      "text": "资源已复制到您的 Grafnaut Cloud 堆栈。<2>了解更多</2>关于全套支持资源和迁移其他设置的信息。"
     },
     "token-status": {
       "active": "令牌已创建并激活",
@@ -10184,14 +10184,14 @@
       "unknown-error": "检索令牌时出错"
     },
     "what-is-cloud": {
-      "body": "Grafana Cloud 是一个完全托管的云托管观测平台，是云原生环境的理想选择。它拥有您所喜爱的 Grafana 的一切，而无需维护、升级和支持安装。",
+      "body": "Grafnaut Cloud 是一个完全托管的云托管观测平台，是云原生环境的理想选择。它拥有您所喜爱的 Grafana 的一切，而无需维护、升级和支持安装。",
       "link-title": "了解云端功能",
-      "title": "Grafana Cloud 是什么？"
+      "title": "Grafnaut Cloud 是什么？"
     },
     "why-host": {
-      "body": "除了托管的便利性外，Grafana Cloud 还包括许多云专属功能，如 SLO、事件管理、机器学习和强大的观测能力集成。",
+      "body": "除了托管的便利性外，Grafnaut Cloud 还包括许多云专属功能，如 SLO、事件管理、机器学习和强大的观测能力集成。",
       "link-title": "还有问题？咨询专家",
-      "title": "为什么使用 Grafana 托管？"
+      "title": "为什么使用 Grafnaut 托管？"
     }
   },
   "multicombobox": {
@@ -10219,7 +10219,7 @@
       "title": "警报"
     },
     "alerting-admin": {
-      "subtitle": "管理 Alertmanager 配置并启用接收 Grafana 管理的提醒",
+      "subtitle": "管理 Alertmanager 配置并启用接收 Grafnaut 管理的提醒",
       "title": "设置"
     },
     "alerting-am-routes": {
@@ -10252,7 +10252,7 @@
       "title": "静默"
     },
     "alerting-upgrade": {
-      "subtitle": "将您现有的旧版警报和通知通道升级到新的 Grafana 告警",
+      "subtitle": "将您现有的旧版警报和通知通道升级到新的 Grafnaut 告警",
       "title": "Alerting 升级"
     },
     "alerts-and-incidents": {
@@ -10267,7 +10267,7 @@
       "title": "应用程序"
     },
     "apps": {
-      "subtitle": "扩展 Grafana 体验的应用插件",
+      "subtitle": "扩展 Grafnaut 体验的应用插件",
       "title": "更多应用"
     },
     "authentication": {
@@ -10290,7 +10290,7 @@
       "title": "用户和访问权限"
     },
     "config-general": {
-      "subtitle": "管理 Grafana 上的默认首选项和设置",
+      "subtitle": "管理 Grafnaut 上的默认首选项和设置",
       "title": "概况"
     },
     "config-plugins": {
@@ -10355,18 +10355,18 @@
       "title": "前端"
     },
     "global-orgs": {
-      "subtitle": "在同一服务器上运行的 Grafana 的孤立实例",
+      "subtitle": "在同一服务器上运行的 Grafnaut 的孤立实例",
       "title": "组织"
     },
     "global-users": {
-      "subtitle": "在 Grafana 中管理用户",
+      "subtitle": "在 Grafnaut 中管理用户",
       "title": "用户"
     },
     "grafana-quaderno": {
-      "title": "Grafana Quaderno"
+      "title": "Grafnaut Quaderno"
     },
     "groupsync": {
-      "subtitle": "管理身份提供商组与 Grafana 角色的映射"
+      "subtitle": "管理身份提供商组与 Grafnaut 角色的映射"
     },
     "help": {
       "title": "帮助"
@@ -10419,7 +10419,7 @@
     },
     "migrate-to-cloud": {
       "subtitle": "将资源从自行管理的安装复制到云堆栈",
-      "title": "迁移到Grafana Cloud"
+      "title": "迁移到Grafnaut Cloud"
     },
     "monitoring": {
       "subtitle": "开箱即用的可观察性解决方案",
@@ -10446,11 +10446,11 @@
       "title": "播放列表"
     },
     "plugins": {
-      "subtitle": "使用插件扩展 Grafana 体验",
+      "subtitle": "使用插件扩展 Grafnaut 体验",
       "title": "插件"
     },
     "private-data-source-connections": {
-      "subtitle": "查询安全网络中的数据，无需打开网络从 Grafana Cloud 传入流量。请在我们的文档中了解更多信息。",
+      "subtitle": "查询安全网络中的数据，无需打开网络从 Grafnaut Cloud 传入流量。请在我们的文档中了解更多信息。",
       "title": "私有数据源连接"
     },
     "profile/notifications": {
@@ -10485,11 +10485,11 @@
       "title": "搜索仪表板"
     },
     "server-settings": {
-      "subtitle": "查看 Grafana 配置中定义的设置",
+      "subtitle": "查看 Grafnaut 配置中定义的设置",
       "title": "设置"
     },
     "service-accounts": {
-      "subtitle": "使用服务帐户在 Grafana 中运行自动化工作负载",
+      "subtitle": "使用服务帐户在 Grafnaut 中运行自动化工作负载",
       "title": "服务帐户"
     },
     "setup-guide": {
@@ -10602,7 +10602,7 @@
     "category-news": "新闻",
     "description-show-image": "控制新闻项目社交 (og:image) 图片是否显示在文本内容上方",
     "description-url": "支持 RSS 和 Atom 源",
-    "link-title": "前往 Grafana Labs 博客",
+    "link-title": "前往 Grafnaut Labs 博客",
     "name-show-image": "显示图片",
     "name-url": "URL",
     "news-panel": {
@@ -11034,8 +11034,8 @@
       "label-search": "搜索",
       "label-state": "状态",
       "label-type": "类型",
-      "subtitle": "使用面板插件和应用扩展 Grafana 体验。要查找更多数据源，请前往<2>连接</2>。",
-      "tooltip-filter-disabled": "该筛选器已禁用，因为 Grafana 服务器无法访问 grafana.com"
+      "subtitle": "使用面板插件和应用扩展 Grafnaut 体验。要查找更多数据源，请前往<2>连接</2>。",
+      "tooltip-filter-disabled": "该筛选器已禁用，因为 Grafnaut 服务器无法访问 grafnaut.com"
     },
     "catalog": {
       "no-updates-available": "没有可用更新",
@@ -11068,19 +11068,19 @@
       },
       "disabled-error": {
         "angular-deprecation-link": "了解更多关于 Angular 弃用的信息",
-        "angular-error-text": "由于 Grafana 不再支持基于 Angular 的插件，该插件已被禁用。您可以尝试将插件更新到最新版本来解决这个问题。然后，您应该测试以确认其能正常运作。",
-        "angular-error-text-no-non-angular-version": "由于 Grafana 不再支持基于 Angular 的插件，该插件已被禁用。遗憾的是，该插件的最新版本仍在使用 Angular，因此您需要等待插件作者迁移后才能继续使用该插件。",
+        "angular-error-text": "由于 Grafnaut 不再支持基于 Angular 的插件，该插件已被禁用。您可以尝试将插件更新到最新版本来解决这个问题。然后，您应该测试以确认其能正常运作。",
+        "angular-error-text-no-non-angular-version": "由于 Grafnaut 不再支持基于 Angular 的插件，该插件已被禁用。遗憾的是，该插件的最新版本仍在使用 Angular，因此您需要等待插件作者迁移后才能继续使用该插件。",
         "contact-server-admin": "请联系服务器管理员解决此问题。",
         "failed-backend-start-text": "此插件启动失败。服务器日志可以提供更多信息。",
-        "invalid-signature-text": "Grafana Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现它的签名无效。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
+        "invalid-signature-text": "Grafnaut Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现它的签名无效。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
         "manage-plugins-link": "了解更多有关管理插件的信息",
-        "missing-signature-text": "Grafana Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现该插件没有签名。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
-        "modified-signature-text": "Grafana Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现该插件的内容与其签名不符。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
+        "missing-signature-text": "Grafnaut Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现该插件没有签名。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
+        "modified-signature-text": "Grafnaut Labs 会检查每个插件，以验证它们是否具有有效的数字签名。在此过程中，我们发现该插件的内容与其签名不符。我们无法保证该插件的可靠性，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是经过验证的版本。",
         "title": "插件已禁用",
         "unknown-error-text": "由于不明原因，我们无法运行该插件，因此已将其禁用。我们建议您重新安装该插件，以确保您运行的是该插件的有效版本。"
       },
       "labels": {
-        "contactGrafanaLabs": "联系 Grafana Labs",
+        "contactGrafanaLabs": "联系 Grafnaut Labs",
         "customLinks": "",
         "customLinksTooltip": "这些链接由插件开发者提供，为大家提供额外的开发者专属资源和信息",
         "dependencies": "依赖关系",
@@ -11093,7 +11093,7 @@
         "license": "许可",
         "raiseAnIssue": "报告问题",
         "reportAbuse": "",
-        "reportAbuseTooltip": "直接向 Grafana Labs 报告与恶意或有害插件相关的问题。",
+        "reportAbuseTooltip": "直接向 Grafnaut Labs 报告与恶意或有害插件相关的问题。",
         "repository": "存储库",
         "signature": "签名",
         "sponsorDeveloper": "赞助此开发人员",
@@ -11120,7 +11120,7 @@
       }
     },
     "filter": {
-      "disabled": "该筛选器已禁用，因为 Grafana 服务器无法访问 grafana.com",
+      "disabled": "该筛选器已禁用，因为 Grafnaut 服务器无法访问 grafnaut.com",
       "sort": "排序",
       "sort-list": "对插件列表排序",
       "state": "状态"
@@ -11154,12 +11154,12 @@
       }
     },
     "install-controls-warning": {
-      "body-not-published": "此插件未发布到 <2>grafana.com/plugins</2>，无法通过目录管理。",
-      "enterprise-plugin-info": "此插件仅在 Grafana Cloud 和 Grafana Enterprise 中可用。",
+      "body-not-published": "此插件未发布到 <2>grafnaut.com/plugins</2>，无法通过目录管理。",
+      "enterprise-plugin-info": "此插件仅在 Grafnaut Cloud 和 Grafana Enterprise 中可用。",
       "learn-more": "了解更多",
       "title-dev-alert": "这是插件的开发版本，无法卸载。",
-      "title-plugin-doesnt-support-version-grafana": "此插件不支持您的 Grafana 版本。",
-      "title-remote-plugins-unavailable": "安装控件已被禁用，因为 Grafana 服务器无法访问 grafana.com。",
+      "title-plugin-doesnt-support-version-grafana": "此插件不支持您的 Grafnaut 版本。",
+      "title-remote-plugins-unavailable": "安装控件已被禁用，因为 Grafnaut 服务器无法访问 grafnaut.com。",
       "title-renderer-plugins-cannot-managed-plugin-catalog": "渲染器插件无法由插件目录管理。"
     },
     "log-view-filters": {
@@ -11186,14 +11186,14 @@
       "tooltip-plugin-deprecated-longer-receives-updates": "此插件已被弃用，不再接收更新。"
     },
     "plugin-details-body": {
-      "needs-service-account": "{{pluginName}} 插件需要一个服务账户才能查询 Grafana。以下列表包含服务账户可用的权限：",
+      "needs-service-account": "{{pluginName}} 插件需要一个服务账户才能查询 Grafnaut。以下列表包含服务账户可用的权限：",
       "page-not-found": "无法找到页面。"
     },
     "plugin-details-deprecated-warning": {
       "title-deprecated": "已弃用"
     },
     "plugin-details-header-dependencies": {
-      "grafana-dependency": "Grafana {{grafanaDependency}}"
+      "grafana-dependency": "Grafnaut {{grafnautDependency}}"
     },
     "plugin-details-page": {
       "not-found-model": {
@@ -11206,7 +11206,7 @@
       }
     },
     "plugin-details-signature": {
-      "body-invalid-plugin-signature": "Grafana Labs 会检查每个插件，以验证它们是否具有有效的数字签名。插件签名验证是我们安全措施的一部分，旨在确保插件安全可信。Grafana Labs 无法保证此未签名插件的完整性。请让插件作者要求对其签名。",
+      "body-invalid-plugin-signature": "Grafnaut Labs 会检查每个插件，以验证它们是否具有有效的数字签名。插件签名验证是我们安全措施的一部分，旨在确保插件安全可信。Grafana Labs 无法保证此未签名插件的完整性。请让插件作者要求对其签名。",
       "read-more-about-plugins-signing": "了解更多有关插件签名的信息。",
       "title-invalid-plugin-signature": "插件签名无效"
     },
@@ -11216,7 +11216,7 @@
     "plugin-enterprise-badge": {
       "aria-label-enterprise": "企业",
       "text-enterprise": "企业",
-      "title-requires-a-grafana-enterprise-license": "需要 Grafana 企业版许可证"
+      "title-requires-a-grafana-enterprise-license": "需要 Grafnaut 企业版许可证"
     },
     "plugin-help": {
       "error": "载入帮助时发生错误。",
@@ -11245,10 +11245,10 @@
     "plugins-errors-info": {
       "disabled-list": "以下插件已禁用，不会显示在以下列表中：",
       "read-more-about-plugin-signing": "了解更多有关插件签名的信息",
-      "title-unsigned-plugins": "在插件初始化期间发现未签名的插件。Grafana Labs 无法保证这些插件的完整性。我们建议仅使用已签名的插件。"
+      "title-unsigned-plugins": "在插件初始化期间发现未签名的插件。Grafnaut Labs 无法保证这些插件的完整性。我们建议仅使用已签名的插件。"
     },
     "search-field": {
-      "placeholder-search-grafana-plugins": "搜索 Grafana 插件"
+      "placeholder-search-grafana-plugins": "搜索 Grafnaut 插件"
     },
     "use-plugin-details-tabs": {
       "nav-model-children": {
@@ -11261,7 +11261,7 @@
       "text-installed": "已安装"
     },
     "version-list": {
-      "grafana-dependency": "Grafana 依赖关系",
+      "grafana-dependency": "Grafnaut 依赖关系",
       "installed-version": "{{versionNumber}}（已安装版本）",
       "latest-compatible-version": "{{versionNumber}}（最新兼容版本）",
       "latest-release-date": "最新发布日期",
@@ -11291,7 +11291,7 @@
       "profile-not-enabled": "配置文件未启用。"
     },
     "feature-toggles-age": {
-      "enable-in-config": "在 Grafana 配置文件中启用配置文件。"
+      "enable-in-config": "在 Grafnaut 配置文件中启用配置文件。"
     },
     "input-suffix": {
       "content-login-details-locked-because-managed-another": "登录详情已锁定，因为它们在另一个系统中进行管理。"
@@ -11335,7 +11335,7 @@
     "preview-banner": {
       "behind-branch-text": "此资源位于 {{repoType}} 的分支之后。",
       "branch-text": "",
-      "not-saved": "在合并此分支之前，您组织中的其他 Grafana 用户仍将看到保存到已配置默认分支的当前版本",
+      "not-saved": "在合并此分支之前，您组织中的其他 Grafnaut 用户仍将看到保存到已配置默认分支的当前版本",
       "open-in-repo-button": "在 {{repoType}} 中打开",
       "open-pull-request-in-repo": "在以下位置打开拉取请求：{{repoType}}",
       "view-in-repo-button": "在中查看 {{repoType}}，以查看最新更改。",
@@ -11349,7 +11349,7 @@
   "provisioned-resource-request-handler-folder": "文件夹已成功创建",
   "provisioning": {
     "banner": {
-      "message": "此功能目前正在积极开发中。为了获得最佳体验和最新改进，我们建议您使用 Grafana 的<2>夜间版本</2>。"
+      "message": "此功能目前正在积极开发中。为了获得最佳体验和最新改进，我们建议您使用 Grafnaut 的<2>夜间版本</2>。"
     },
     "bitbucket": {
       "branch-description": "用于预置的分支",
@@ -11403,7 +11403,7 @@
       "button-save": "保存",
       "button-saving": "正在保存...",
       "description-enabled": "启用自动拉取后，将无法更改目标。",
-      "description-read-only": "无法通过 Grafana 修改资源。",
+      "description-read-only": "无法通过 Grafnaut 修改资源。",
       "description-title": "人类可读的配置名称",
       "error-fetch-branches": "",
       "error-required": "此字段是必填字段。",
@@ -11420,7 +11420,7 @@
       "placeholder-my-config": "我的配置"
     },
     "config-form-github-collapse": {
-      "description-realtime-feedback": "<0>配置 Webhook</0>，以便在提交更改后立即在 Grafana 中获取更新。使用拉取请求审核和批准更改，然后再发布。",
+      "description-realtime-feedback": "<0>配置 Webhook</0>，以便在提交更改后立即在 Grafnaut 中获取更新。使用拉取请求审核和批准更改，然后再发布。",
       "label-git-hub-features": "GitHub 功能",
       "label-realtime-feedback": "实时反馈"
     },
@@ -11461,7 +11461,7 @@
     },
     "enhanced-features": {
       "description": "使用这些可选附加组件，充分利用 GitHub 集成功能",
-      "description-instant-updates": "在提交更改后立即在 Grafana 中获取更新。使用拉取请求审核和批准更改，然后再发布。",
+      "description-instant-updates": "在提交更改后立即在 Grafnaut 中获取更新。使用拉取请求审核和批准更改，然后再发布。",
       "description-visual-previews-dashboard-updates-directly-requests": "直接在拉取请求中查看数据面板更新的可视化预览",
       "header": "增强您的 GitHub 体验",
       "set-up-image-rendering": "设置图像渲染",
@@ -11502,11 +11502,11 @@
       "placeholder-search": "搜索"
     },
     "finish-step": {
-      "description-enable-previews": "在拉取请求中添加数据面板更改的图像预览。Grafana 数据面板的图像将在 Git 存储库中共享，并对具有存储库访问权限的任何人可见。",
+      "description-enable-previews": "在拉取请求中添加数据面板更改的图像预览。Grafnaut 数据面板的图像将在 Git 存储库中共享，并对具有存储库访问权限的任何人可见。",
       "description-generate-dashboard-previews": "创建拉取请求的预览链接",
       "description-image-rendering": "需要图像渲染。<2>设置图像渲染</2>",
       "description-preview-requirements": "（需要启用<2>图像渲染</2>和公共访问权限）",
-      "description-read-only": "无法通过 Grafana 修改资源。",
+      "description-read-only": "无法通过 Grafnaut 修改资源。",
       "description-sync-interval": "从存储库同步更改的频率",
       "error-sync-interval-required": "同步间隔为必填项",
       "label-enable-previews": "在拉取请求中启用数据面板预览",
@@ -11528,18 +11528,18 @@
     },
     "getting-started": {
       "alert-temporary-outage": "在连接整个实例的情况下，数据面板在运行迁移时将不可用。我们建议您在开始此流程之前提醒您的用户。",
-      "modal-description-public-access": "设置对您 Grafana 实例的公共访问以启用 GitHub 集成",
-      "modal-description-required-features": "启用预配所需的 Grafana 功能",
+      "modal-description-public-access": "设置对您 Grafnaut 实例的公共访问以启用 GitHub 集成",
+      "modal-description-required-features": "启用预配所需的 Grafnaut 功能",
       "modal-title-set-up-public-access": "设置公共访问",
       "modal-title-set-up-required-features": "设置所需功能",
       "step-description-copy-url": "从 ngrok 输出中，复制 https:// 转发 URL，如下所示：",
       "step-description-enable-feature-toggles": "将这些设置添加到您的 custom.ini 文件以启用必要的功能：",
-      "step-description-start-ngrok": "运行此命令以创建指向本地 Grafana 的安全隧道：",
+      "step-description-start-ngrok": "运行此命令以创建指向本地 Grafnaut 的安全隧道：",
       "step-description-update-grafana-config": "将此添加到您的 custom.ini 文件，并将 URL 替换为您的实际 ngrok URL：",
       "step-title-copy-url": "复制您的公共 URL",
       "step-title-enable-feature-toggles": "启用所需的功能切换",
       "step-title-start-ngrok": "启动 ngrok 以实现临时公共访问",
-      "step-title-update-grafana-config": "更新您的 Grafana 配置",
+      "step-title-update-grafana-config": "更新您的 Grafnaut 配置",
       "title-setting-connection-could-cause-temporary-outage": "设置此连接可能会导致暂时中断"
     },
     "getting-started-page": {
@@ -11655,14 +11655,14 @@
     },
     "mode-options": {
       "folder": {
-        "description": "设置后，将创建一个新的 Grafana 文件夹，并与外部存储同步。如果外部存储中存在任何资源，它们将被预配到此新文件夹中。在此文件夹中创建的所有新资源都将存储在外部存储中并进行版本控制。",
-        "label": "将外部存储同步到新的 Grafana 文件夹",
+        "description": "设置后，将创建一个新的 Grafnaut 文件夹，并与外部存储同步。如果外部存储中存在任何资源，它们将被预配到此新文件夹中。在此文件夹中创建的所有新资源都将存储在外部存储中并进行版本控制。",
+        "label": "将外部存储同步到新的 Grafnaut 文件夹",
         "subtitle": "使用此选项可将外部资源同步到新文件夹中，而不会影响实例的其余部分。您最多可以对 10 个文件夹重复此过程。"
       },
       "instance": {
-        "description": "资源将与外部存储同步，并预配到此实例中。现有的 Grafana 资源将被迁移并在需要时合并。设置完成后，所有新资源和更改都将保存到外部存储中，并自动预配回实例。",
+        "description": "资源将与外部存储同步，并预配到此实例中。现有的 Grafnaut 资源将被迁移并在需要时合并。设置完成后，所有新资源和更改都将保存到外部存储中，并自动预配回实例。",
         "label": "将所有资源与外部存储同步",
-        "subtitle": "如果要通过外部存储来同步和管理整个 Grafana 实例，请使用此选项。"
+        "subtitle": "如果要通过外部存储来同步和管理整个 Grafnaut 实例，请使用此选项。"
       }
     },
     "provisioning-wizard": {
@@ -11750,7 +11750,7 @@
       "tab-overview": "概述",
       "tab-overview-title": "存储库概览",
       "tab-resources": "资源",
-      "tab-resources-title": "保存在 Grafana 数据库中的资源",
+      "tab-resources-title": "保存在 Grafnaut 数据库中的资源",
       "title": "存储库状态",
       "title-legacy-storage": "传统存储",
       "title-queued-for-deletion": "已进入队列等待删除"
@@ -11787,7 +11787,7 @@
       "tab-info": {
         "label": {
           "dry-run-result-after-apply": "试运行（应用后的结果）",
-          "existing-from-grafana": "现有（来自 Grafana）",
+          "existing-from-grafana": "现有（来自 Grafnaut）",
           "file-from-repository": "文件（来自存储库）"
         }
       },
@@ -12221,7 +12221,7 @@
     "user-count": "+{{numUsers}}"
   },
   "route-error": {
-    "description": "Grafana 可能已更新。请尝试重新加载页面。",
+    "description": "Grafnaut 可能已更新。请尝试重新加载页面。",
     "error-title": "错误详情",
     "error-unexpected-title": "发生意外错误",
     "reload-button": "重新加载",
@@ -12444,7 +12444,7 @@
       "confirmText-delete": "删除",
       "confirmText-disable-service-account": "禁用服务帐户",
       "placeholder-search-service-account-by-name": "按名称搜索服务账户",
-      "sub-title": "服务账户及其令牌可用于对 Grafana API 进行身份验证。不妨在我们的<2>文档</2>中了解更多信息。",
+      "sub-title": "服务账户及其令牌可用于对 Grafnaut API 进行身份验证。不妨在我们的<2>文档</2>中了解更多信息。",
       "title-delete-service-account": "删除服务账户",
       "title-disable-service-account": "禁用服务账户",
       "body-delete_other": "您确定要删除 {{serviceAccountName}} 和 {{count}} 个随附令牌吗？"
@@ -12483,7 +12483,7 @@
     "embed": {
       "copy": "复制到剪贴板",
       "html": "嵌入 HTML",
-      "html-description": "以下 HTML 代码可以粘贴并包含在另一个网页中。除非启用了匿名访问，否则查看该页面的用户需要登录 Grafana 才能加载图表。",
+      "html-description": "以下 HTML 代码可以粘贴并包含在另一个网页中。除非启用了匿名访问，否则查看该页面的用户需要登录 Grafnaut 才能加载图表。",
       "info": "生成 HTML，以在此面板中嵌入 iframe",
       "time-range": "锁定时间范围"
     },
@@ -12730,7 +12730,7 @@
       "delete-title": "删除快照",
       "deleted-alert": "快照已删除。从 CDN 缓存中清除可能需要一个小时。",
       "expiration-label": "到期时间",
-      "info-alert": "Grafana 数据面板快照可公开共享数据面板，同时移除敏感数据（如查询和面板链接），仅保留可见的指标和系列名称。拥有链接的任何人都可以访问快照。",
+      "info-alert": "Grafnaut 数据面板快照可公开共享数据面板，同时移除敏感数据（如查询和面板链接），仅保留可见的指标和系列名称。拥有链接的任何人都可以访问快照。",
       "learn-more-button": "了解更多",
       "local-button": "发布快照",
       "name-label": "快照名称",
@@ -12740,7 +12740,7 @@
       "view-all-button": "查看所有快照"
     },
     "share-panel": {
-      "info-alert": "Grafana 面板快照可公开共享面板，同时移除敏感数据（如查询和面板链接），仅保留可见的指标和系列名称。拥有链接的任何人都可以访问快照。"
+      "info-alert": "Grafnaut 面板快照可公开共享面板，同时移除敏感数据（如查询和面板链接），仅保留可见的指标和系列名称。拥有链接的任何人都可以访问快照。"
     },
     "url-column-header": "快照网址",
     "view-button": "查看"
@@ -12897,7 +12897,7 @@
       "download": "下载",
       "expires": "过期",
       "requested-by": "请求人",
-      "sub-title": "通过支持捆绑包，您可以轻松收集 Grafana 日志、配置和数据，并与 Grafana Labs 团队共享。",
+      "sub-title": "通过支持捆绑包，您可以轻松收集 Grafnaut 日志、配置和数据，并与 Grafana Labs 团队共享。",
       "tooltip-remove-bundle": "移除捆绑包"
     }
   },
@@ -13049,7 +13049,7 @@
       "external-group-id": "外部组 ID",
       "external-group-sync": "外部组同步",
       "label-add-external-group": "添加外部组",
-      "team-sync-upgrade": "添加一个组，以便在试用 Grafana Pro 期间免费启用团队同步",
+      "team-sync-upgrade": "添加一个组，以便在试用 Grafnaut Pro 期间免费启用团队同步",
       "text": {
         "add-group": "添加组"
       },
@@ -13076,7 +13076,7 @@
       "save": ""
     },
     "team-sync-upgrade-content": {
-      "description": "团队同步可根据每个用户的单点登录组成员身份立即更新其 Grafana 团队和权限，而不是在用户登录时更新，从而让您更轻松地管理用户在 Grafana 中的访问权限"
+      "description": "团队同步可根据每个用户的单点登录组成员身份立即更新其 Grafnaut 团队和权限，而不是在用户登录时更新，从而让您更轻松地管理用户在 Grafana 中的访问权限"
     }
   },
   "text": {
@@ -13386,7 +13386,7 @@
         "format-field": "格式化字段"
       },
       "tooltip-explicit-separator-joining-array-values": "合并数组值时使用显式分隔符",
-      "tooltip-input-format": "指定输入字段的格式，以便 Grafana 可以正确解析日期字符串。",
+      "tooltip-input-format": "指定输入字段的格式，以便 Grafnaut 可以正确解析日期字符串。",
       "tooltip-specify-the-output-format": "指定输出格式。",
       "tooltip-timezone-manually": "手动设置日期的时区"
     },
@@ -14102,7 +14102,7 @@
   },
   "upgrade-box": {
     "discovery-text": "您发现了一项专业功能！",
-    "discovery-text-continued": "获取 Grafana 专业套餐以访问 {{featureName}}。",
+    "discovery-text-continued": "获取 Grafnaut 专业套餐以访问 {{featureName}}。",
     "get-started": "开始使用 {{featureName}}",
     "learn-more": "了解更多",
     "upgrade-button": "升级"
@@ -14361,7 +14361,7 @@
   "welcome": {
     "welcome-banner": {
       "need-help": "需要帮助吗？",
-      "welcome-to-grafana": "欢迎使用 Grafana"
+      "welcome-to-grafana": "欢迎使用 Grafnaut"
     }
   },
   "xychart": {

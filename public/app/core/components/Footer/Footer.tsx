@@ -2,7 +2,7 @@ import { css } from '@emotion/css';
 import { memo } from 'react';
 
 import { GrafanaTheme2, LinkTarget } from '@grafana/data';
-import { t } from '@grafana/i18n';
+// import { t } from '@grafana/i18n';
 import { config } from '@grafana/runtime';
 import { Icon, IconName, useStyles2 } from '@grafana/ui';
 
@@ -16,27 +16,27 @@ export interface FooterLink {
 
 export let getFooterLinks = (): FooterLink[] => {
   return [
-    {
-      target: '_blank',
-      id: 'documentation',
-      text: t('nav.help/documentation', 'Documentation'),
-      icon: 'document-info',
-      url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
-    },
-    {
-      target: '_blank',
-      id: 'support',
-      text: t('nav.help/support', 'Support'),
-      icon: 'question-circle',
-      url: 'https://grafana.com/products/enterprise/?utm_source=grafana_footer',
-    },
-    {
-      target: '_blank',
-      id: 'community',
-      text: t('nav.help/community', 'Community'),
-      icon: 'comments-alt',
-      url: 'https://community.grafana.com/?utm_source=grafana_footer',
-    },
+    // {
+    //   target: '_blank',
+    //   id: 'documentation',
+    //   text: t('nav.help/documentation', 'Documentation'),
+    //   icon: 'document-info',
+    //   url: 'https://grafana.com/docs/grafana/latest/?utm_source=grafana_footer',
+    // },
+    // {
+    //   target: '_blank',
+    //   id: 'support',
+    //   text: t('nav.help/support', 'Support'),
+    //   icon: 'question-circle',
+    //   url: 'https://grafana.com/products/enterprise/?utm_source=grafana_footer',
+    // },
+    // {
+    //   target: '_blank',
+    //   id: 'community',
+    //   text: t('nav.help/community', 'Community'),
+    //   icon: 'comments-alt',
+    //   url: 'https://community.grafana.com/?utm_source=grafana_footer',
+    // },
   ];
 };
 

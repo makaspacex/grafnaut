@@ -92,7 +92,7 @@ export class GrafanaBootConfig {
   appUrl = '';
   appSubUrl = '';
   namespace = 'default';
-  windowTitlePrefix = 'Grafana - ';
+  windowTitlePrefix = 'Grafnaut - ';
   buildInfo: BuildInfo = {
     version: '1.0',
     commit: '1',
