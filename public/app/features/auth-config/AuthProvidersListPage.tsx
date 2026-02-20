@@ -9,8 +9,6 @@ import { Page } from 'app/core/components/Page/Page';
 import { config } from 'app/core/config';
 import { StoreState } from 'app/types/store';
 
-import { isOpenSourceBuildOrUnlicenced } from '../admin/EnterpriseAuthFeaturesCard';
-
 import AuthDrawer from './AuthDrawer';
 import ConfigureAuthCTA from './components/ConfigureAuthCTA';
 import { ProviderCard, ProviderSAMLCard, ProviderSCIMCard } from './components/ProviderCard';
