@@ -73,18 +73,18 @@ export function getVersionLinks(hideEdition?: boolean): FooterLink[] {
     target: '_blank',
     id: 'version',
     text: buildInfo.versionString,
-    url: hasReleaseNotes ? `https://github.com/grafana/grafana/blob/main/CHANGELOG.md` : undefined,
+    url: hasReleaseNotes ? `https://repo.sdqbkj.com/product/grafnaut/src/branch/main/CHANGELOG.md` : undefined,
   });
 
-  if (buildInfo.hasUpdate) {
-    links.push({
-      target: '_blank',
-      id: 'updateVersion',
-      text: `New version available!`,
-      icon: 'download-alt',
-      url: 'https://grafana.com/grafana/download?utm_source=grafana_footer',
-    });
-  }
+  // if (buildInfo.hasUpdate) {
+  //   links.push({
+  //     target: '_blank',
+  //     id: 'updateVersion',
+  //     text: `New version available!`,
+  //     icon: 'download-alt',
+  //     url: 'https://grafana.com/grafana/download?utm_source=grafana_footer',
+  //   });
+  // }
 
   return links;
 }

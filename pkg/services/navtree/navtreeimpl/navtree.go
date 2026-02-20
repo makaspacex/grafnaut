@@ -86,24 +86,22 @@ func ProvideService(cfg *setting.Cfg, accessControl ac.AccessControl, pluginStor
 func (s *ServiceImpl) GetNavTree(c *contextmodel.ReqContext, prefs *pref.Preference) (*navtree.NavTreeRoot, error) {
 	hasAccess := ac.HasAccess(s.accessControl, c)
 	treeRoot := &navtree.NavTreeRoot{}
-	ctx := c.Req.Context()
 
 	treeRoot.AddSection(s.getHomeNode(c, prefs))
 
-	if hasAccess(ac.EvalPermission(dashboards.ActionDashboardsRead)) {
-		starredItemsLinks, err := s.buildStarredItemsNavLinks(c)
-		if err != nil {
-			return nil, err
-		}
+	ctx := c.Req.Context()
 
+	flagDetails, err := openfeature.NewDefaultClient().BooleanValueDetails(ctx, featuremgmt.FlagPinNavItems, true, openfeature.TransactionContext(ctx))
+	s.log.Debug("flag evaluation: ", "flagDetails", flagDetails, "err", err)
+	if flagDetails.Value && c.IsSignedIn {
 		treeRoot.AddSection(&navtree.NavLink{
-			Text:           "Starred",
-			Id:             "starred",
-			Icon:           "star",
-			SortWeight:     navtree.WeightSavedItems,
-			Children:       starredItemsLinks,
-			EmptyMessageId: "starred-empty",
-			Url:            s.cfg.AppSubURL + "/dashboards?starred",
+			Text:           "Bookmarks",
+			Id:             navtree.NavIDBookmarks,
+			Icon:           "bookmark",
+			SortWeight:     navtree.WeightBookmarks,
+			Children:       []*navtree.NavLink{},
+			EmptyMessageId: "bookmarks-empty",
+			Url:            s.cfg.AppSubURL + "/bookmarks",
 		})
 	}
 
@@ -186,20 +184,6 @@ func (s *ServiceImpl) GetNavTree(c *contextmodel.ReqContext, prefs *pref.Prefere
 	// double-check and remove admin menu if empty
 	if sec := treeRoot.FindById(navtree.NavIDCfg); sec != nil && len(sec.Children) == 0 {
 		treeRoot.RemoveSectionByID(navtree.NavIDCfg)
-	}
-
-	flagDetails, err := openfeature.NewDefaultClient().BooleanValueDetails(ctx, featuremgmt.FlagPinNavItems, true, openfeature.TransactionContext(ctx))
-	s.log.Debug("flag evaluation: ", "flagDetails", flagDetails, "err", err)
-	if flagDetails.Value && c.IsSignedIn {
-		treeRoot.AddSection(&navtree.NavLink{
-			Text:           "Bookmarks",
-			Id:             navtree.NavIDBookmarks,
-			Icon:           "bookmark",
-			SortWeight:     navtree.WeightBookmarks,
-			Children:       []*navtree.NavLink{},
-			EmptyMessageId: "bookmarks-empty",
-			Url:            s.cfg.AppSubURL + "/bookmarks",
-		})
 	}
 
 	return treeRoot, nil
@@ -420,6 +404,9 @@ func (s *ServiceImpl) buildDashboardNavLinks(c *contextmodel.ReqContext) []*navt
 				Url:      s.cfg.AppSubURL + "/dashboard/recently-deleted",
 			})
 		}
+
+
+
 	}
 
 	if hasAccess(ac.EvalPermission(dashboards.ActionDashboardsCreate)) {

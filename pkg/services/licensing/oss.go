@@ -9,7 +9,7 @@ import (
 )
 
 const (
-	openSource = "Open Source"
+	openSource = "青博科技定制版"
 )
 
 type OSSLicensingService struct {
@@ -38,7 +38,7 @@ func (l *OSSLicensingService) LicenseURL(showAdminLicensingPage bool) string {
 		return l.Cfg.AppSubURL + "/admin/upgrading"
 	}
 
-	return "https://grafana.com/oss/grafana?utm_source=grafana_footer"
+	return "https://www.sdqbtech.com/"
 }
 
 func (*OSSLicensingService) EnabledFeatures() map[string]bool {
