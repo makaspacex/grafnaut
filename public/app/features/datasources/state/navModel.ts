@@ -1,12 +1,6 @@
 import { DataSourceSettings, PluginType, PluginInclude, NavModel, NavModelItem } from '@grafana/data';
 import { t } from '@grafana/i18n';
-import { featureEnabled } from '@grafana/runtime';
-import { ProBadge } from 'app/core/components/Upgrade/ProBadge';
-import config from 'app/core/config';
 import { contextSrv } from 'app/core/core';
-import { isOpenSourceBuildOrUnlicenced } from 'app/features/admin/EnterpriseAuthFeaturesCard';
-import { highlightTrial } from 'app/features/admin/utils';
-import { AccessControlAction } from 'app/types/accessControl';
 import icnDatasourceSvg from 'img/icn-datasource.svg';
 
 import { GenericDataSourcePlugin } from '../types';
@@ -15,7 +9,6 @@ const loadingDSType = 'Loading';
 
 export function buildNavModel(dataSource: DataSourceSettings, plugin: GenericDataSourcePlugin): NavModelItem {
   const pluginMeta = plugin.meta;
-  const highlightsEnabled = config.featureToggles.featureHighlights;
   const navModel: NavModelItem = {
     img: pluginMeta.info.logos.large,
     id: 'datasource-' + dataSource.uid,
