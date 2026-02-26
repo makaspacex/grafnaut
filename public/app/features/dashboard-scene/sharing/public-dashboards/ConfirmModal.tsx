@@ -1,3 +1,4 @@
+import { t } from '@grafana/i18n';
 import { SceneComponentProps, SceneObjectBase, SceneObjectState } from '@grafana/scenes';
 import { ConfirmModal as ConfirmModalComponent, ConfirmModalProps } from '@grafana/ui';
 
@@ -11,7 +12,7 @@ export class ConfirmModal extends SceneObjectBase<ConfirmModalState> implements 
   constructor(state: ConfirmModalState) {
     super({
       confirmVariant: 'destructive',
-      dismissText: 'Cancel',
+      dismissText: t('common.cancel', 'Cancel'),
       dismissVariant: 'secondary',
       icon: 'exclamation-triangle',
       confirmButtonVariant: 'destructive',

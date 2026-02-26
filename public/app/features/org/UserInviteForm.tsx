@@ -41,7 +41,7 @@ const tooltipMessage = (
 );
 
 const roles: Array<SelectableValue<OrgRole>> = Object.values(OrgRole).map((r) => ({
-  label: r === OrgRole.None ? 'No basic role' : r,
+  label: r === OrgRole.None ? t('org.user-invite-form.label-no-basic-role', 'No basic role') : r,
   value: r,
 }));
 
@@ -76,7 +76,11 @@ export const UserInviteForm = () => {
             <FieldSet>
               <Field
                 invalid={!!errors.loginOrEmail}
-                error={!!errors.loginOrEmail ? 'Email or username is required' : undefined}
+                error={
+                  !!errors.loginOrEmail
+                    ? t('org.user-invite-form.error.email-or-username-required', 'Email or username is required')
+                    : undefined
+                }
                 label={t('org.user-invite-form.label-email-or-username', 'Email or username')}
               >
                 {/* eslint-disable-next-line @grafana/i18n/no-untranslated-strings */}

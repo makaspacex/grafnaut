@@ -10,9 +10,9 @@
 #     uid: customuserswriter1
 #     # <string> description of the role, informative purpose only.
 #     description: 'Create, read, write users'
-#     # <int> version of the role, Grafana will update the role when increased.
+#     # <int> version of the role, Grafnaut will update the role when increased.
 #     version: 2
-#     # <int> org id. Defaults to Grafana's default if not specified.
+#     # <int> org id. Defaults to Grafnaut's default if not specified.
 #     orgId: 1
 #     # <list> list of the permissions granted by this role.
 #     permissions:
@@ -52,13 +52,13 @@
 # teams:
 #   # <string, required> name of the team you want to assign roles to. Required.
 #   - name: 'Users writers'
-#     # <int> org id. Will default to Grafana's default if not specified.
+#     # <int> org id. Will default to Grafnaut's default if not specified.
 #     orgId: 1
 #     # <list> list of roles to assign to the team
 #     roles:
 #       # <string> uid of the role you want to assign to the team.
 #       - uid: 'customuserswriter1'
-#         # <int> org id. Will default to Grafana's default if not specified.
+#         # <int> org id. Will default to Grafnaut's default if not specified.
 #         orgId: 1
 #       # <string> name of the role you want to assign to the team.
 #       - name: 'fixed:users:writer'

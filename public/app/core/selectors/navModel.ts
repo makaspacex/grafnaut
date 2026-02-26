@@ -1,6 +1,7 @@
 import memoizeOne from 'memoize-one';
 
 import { NavModel, NavModelItem, NavIndex } from '@grafana/data';
+import { t } from '@grafana/i18n';
 import { FOLDER_ID } from 'app/features/folders/state/navModel';
 
 import { HOME_NAV_ID } from '../reducers/navModel';
@@ -8,9 +9,9 @@ import { HOME_NAV_ID } from '../reducers/navModel';
 const getNotFoundModel = (): NavModel => {
   const node: NavModelItem = {
     id: 'not-found',
-    text: 'Page not found',
+    text: t('core.nav-model.text.page-not-found', 'Page not found'),
     icon: 'exclamation-triangle',
-    subTitle: '404 Error',
+    subTitle: t('core.nav-model.sub-title.http-404-error', '404 Error'),
     url: 'not-found',
   };
 

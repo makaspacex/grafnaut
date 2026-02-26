@@ -1,5 +1,5 @@
 // The new index.html fetches window.grafanaBootData asynchronously.
-// Since much of Grafana depends on it in includes side effects at import time,
+// Since much of Grafnaut depends on it in includes side effects at import time,
 // we delay loading the rest of the app using import() until the boot data is ready.
 
 // Check if we are hosting files on cdn and set webpack public path
@@ -29,6 +29,6 @@ async function bootstrapWindowData() {
 }
 
 bootstrapWindowData().catch((error) => {
-  console.error('Error bootstrapping Grafana', error);
+  console.error('Error bootstrapping Grafnaut', error);
   window.__grafana_load_failed();
 });

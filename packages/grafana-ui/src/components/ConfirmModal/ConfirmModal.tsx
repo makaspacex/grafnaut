@@ -2,6 +2,7 @@ import { css, cx } from '@emotion/css';
 import * as React from 'react';
 
 import { IconName } from '@grafana/data';
+import { t } from '@grafana/i18n';
 
 import { useStyles2 } from '../../themes/ThemeContext';
 import { ButtonVariant } from '../Button/Button';
@@ -61,7 +62,7 @@ export const ConfirmModal = ({
   confirmText,
   confirmVariant = 'destructive',
   confirmationText,
-  dismissText = 'Cancel',
+  dismissText,
   dismissVariant = 'secondary',
   alternativeText,
   modalClass,
@@ -73,6 +74,7 @@ export const ConfirmModal = ({
   disabled,
 }: ConfirmModalProps): JSX.Element => {
   const styles = useStyles2(getStyles);
+  const dismissButtonText = dismissText ?? t('common.cancel', 'Cancel');
 
   return (
     <Modal className={cx(styles.modal, modalClass)} title={title} icon={icon} isOpen={isOpen} onDismiss={onDismiss}>
@@ -80,7 +82,7 @@ export const ConfirmModal = ({
         body={body}
         description={description}
         confirmButtonLabel={confirmText}
-        dismissButtonLabel={dismissText}
+        dismissButtonLabel={dismissButtonText}
         dismissButtonVariant={dismissVariant}
         confirmPromptText={confirmationText}
         alternativeButtonLabel={alternativeText}

@@ -168,7 +168,7 @@ export class GrafanaApp {
       initI18nPromise.then(async ({ language }) => {
         updateConfig({ language });
 
-        // Initialise scenes translations into the Grafana namespace. Must finish before any scenes UI is rendered.
+        // Initialise scenes translations into the Grafnaut namespace. Must finish before any scenes UI is rendered.
         return loadNamespacedResources(GRAFANA_NAMESPACE, language ?? DEFAULT_LANGUAGE, [loadScenesResources]);
       });
 
@@ -321,7 +321,7 @@ export class GrafanaApp {
 
       await postInitTasks();
     } catch (error) {
-      console.error('Failed to start Grafana', error);
+      console.error('Failed to start Grafnaut', error);
       window.__grafana_load_failed();
     } finally {
       stopMeasure('frontend_app_init');

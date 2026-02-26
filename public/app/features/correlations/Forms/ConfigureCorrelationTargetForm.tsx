@@ -19,18 +19,24 @@ type CorrelationTypeOptions = {
   description: string;
 };
 
-export const CORR_TYPES_SELECT: Record<CorrelationType, CorrelationTypeOptions> = {
+const getCorrelationTypeOptions = (): Record<CorrelationType, CorrelationTypeOptions> => ({
   query: {
     value: 'query',
-    label: 'Query',
-    description: 'Open a query',
+    label: t('correlations.configure-correlation-target-form.corr-types-select.label-query', 'Query'),
+    description: t(
+      'correlations.configure-correlation-target-form.corr-types-select.description-open-query',
+      'Open a query'
+    ),
   },
   external: {
     value: 'external',
-    label: 'External',
-    description: 'Open an external URL',
+    label: t('correlations.configure-correlation-target-form.corr-types-select.label-external', 'External'),
+    description: t(
+      'correlations.configure-correlation-target-form.corr-types-select.description-open-external-url',
+      'Open an external URL'
+    ),
   },
-};
+});
 
 const getStyles = (theme: GrafanaTheme2) => ({
   typeSelect: css({
@@ -49,6 +55,7 @@ export const ConfigureCorrelationTargetForm = () => {
   const targetUID: string | undefined = useWatch({ name: 'targetUID' }) || targetUIDFromCorrelation;
   const correlationType: CorrelationType | undefined = useWatch({ name: 'type' }) || correlation?.type;
   const styles = useStyles2(getStyles);
+  const correlationTypeOptions = getCorrelationTypeOptions();
 
   return (
     <>
@@ -76,7 +83,7 @@ export const ConfigureCorrelationTargetForm = () => {
                 className={styles.typeSelect}
                 value={correlationType}
                 onChange={(value) => onChange(value.value)}
-                options={Object.values(CORR_TYPES_SELECT)}
+                options={Object.values(correlationTypeOptions)}
                 aria-label={t(
                   'correlations.configure-correlation-target-form.aria-label-correlation-type',
                   'Correlation type'
@@ -132,7 +139,7 @@ export const ConfigureCorrelationTargetForm = () => {
                   error={
                     errors?.config?.target && 'message' in errors?.config?.target
                       ? (errors?.config?.target as FieldError).message
-                      : 'Error'
+                      : t('correlations.configure-correlation-target-form.error.generic', 'Error')
                   }
                 />
               </>

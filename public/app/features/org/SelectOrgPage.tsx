@@ -1,7 +1,7 @@
 import { connect, ConnectedProps } from 'react-redux';
 import { useEffectOnce } from 'react-use';
 
-import { Trans } from '@grafana/i18n';
+import { Trans, t } from '@grafana/i18n';
 import { config } from '@grafana/runtime';
 import { Button, Stack } from '@grafana/ui';
 import { Page } from 'app/core/components/Page/Page';
@@ -10,16 +10,16 @@ import { UserOrg } from 'app/types/user';
 
 import { getUserOrganizations, setUserOrganization } from './state/actions';
 
-const navModel = {
+const getNavModel = () => ({
   main: {
     icon: 'grafana' as const,
-    subTitle: 'Preferences',
-    text: 'Select active organization',
+    subTitle: t('org.select-org-page.sub-title.preferences', 'Preferences'),
+    text: t('org.select-org-page.text.select-active-organization', 'Select active organization'),
   },
   node: {
-    text: 'Select active organization',
+    text: t('org.select-org-page.text.select-active-organization', 'Select active organization'),
   },
-};
+});
 
 const mapStateToProps = (state: StoreState) => {
   return {
@@ -37,6 +37,8 @@ const connector = connect(mapStateToProps, mapDispatchToProps);
 type Props = ConnectedProps<typeof connector>;
 
 export const SelectOrgPage = ({ setUserOrganization, getUserOrganizations, userOrgs }: Props) => {
+  const navModel = getNavModel();
+
   const setUserOrg = async (org: UserOrg) => {
     await setUserOrganization(org.orgId);
     window.location.href = config.appSubUrl + '/';

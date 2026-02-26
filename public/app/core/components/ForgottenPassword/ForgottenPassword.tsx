@@ -84,7 +84,7 @@ export const ForgottenPassword = () => {
 
       <p className={styles}>
         <Trans i18nKey="forgot-password.contact-admin">
-          Did you forget your username or email? Contact your Grafana administrator.
+          Did you forget your username or email? Contact your Grafnaut administrator.
         </Trans>
       </p>
     </form>

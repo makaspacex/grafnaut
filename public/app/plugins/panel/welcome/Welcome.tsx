@@ -17,7 +17,7 @@ export const WelcomeBanner = () => {
   return (
     <div className={styles.container}>
       <h1 className={styles.title}>
-        <Trans i18nKey="welcome.welcome-banner.welcome-to-grafana">Welcome to Grafana</Trans>
+        <Trans i18nKey="welcome.welcome-banner.welcome-to-grafana">Welcome to Grafnaut</Trans>
       </h1>
       <div className={styles.help}>
         <h3 className={styles.helpText}>
@@ -29,7 +29,7 @@ export const WelcomeBanner = () => {
               <a
                 key={`${option.label}-${index}`}
                 className={styles.helpLink}
-                href={`${option.href}?utm_source=grafana_gettingstarted`}
+                href={`${option.href}?utm_source=grafnaut_gettingstarted`}
               >
                 {option.label}
               </a>

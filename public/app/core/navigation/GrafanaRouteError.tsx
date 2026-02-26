@@ -38,7 +38,7 @@ export function GrafanaRouteError({ error, errorInfo }: Props) {
             <br />
             <h2 className="page-heading">
               <Trans i18nKey="route-error.description">
-                Grafana has likely been updated. Please try reloading the page.
+                Grafnaut has likely been updated. Please try reloading the page.
               </Trans>
             </h2>
             <br />

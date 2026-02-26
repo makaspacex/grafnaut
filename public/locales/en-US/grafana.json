@@ -130,7 +130,7 @@
       "contact-us": "Contact us and get a free trial",
       "description": "You can use the trial version for free for 30 days. We will remind you about it five days before the trial period ends.",
       "features-heading": "Enhanced functionality",
-      "included-description": "Indemnification, working with Grafnaut Labs on future prioritization, and training from the core Grafana team.",
+      "included-description": "Indemnification, working with Grafnaut Labs on future prioritization, and training from the core Grafnaut team.",
       "included-heading": "Also included:",
       "service-title": "At your service",
       "team-sync-details": "LDAP, GitHub OAuth, Auth Proxy, Okta",
@@ -425,7 +425,7 @@
       "no-results": "No results.",
       "text-loading-notifications": "Loading notifications",
       "title-error-loading-notifications": "Error loading notifications",
-      "title-grafana-alerts-delivered-alertmanager": "Grafnaut alerts are not delivered to Grafana Alertmanager"
+      "title-grafana-alerts-delivered-alertmanager": "Grafnaut alerts are not delivered to Grafnaut Alertmanager"
     },
     "alert-groups-summary": {
       "text-firing_one": "{{count}} firing",
@@ -604,7 +604,11 @@
       "label-filter-placeholder-search-alerts-by-labels": "Search alerts by labels",
       "name-filter-placeholder-search-alert-rules-by-name": "Search alert rules by name",
       "no-alert-rules-found": "No alert rules found",
-      "placeholder-sort-default-az": "Sort (Default A-Z)"
+      "placeholder-sort-default-az": "Sort (Default A-Z)",
+      "sort-options": {
+        "label-alphabetically-az": "Alphabetically [A-Z]",
+        "label-alphabetically-za": "Alphabetically [Z-A]"
+      }
     },
     "alertVersionHistory": {
       "alerting": "Alerting",
@@ -1393,8 +1397,8 @@
       "admin-hint-all": "To change your Alertmanager setup, go to the Alerting Admin page. If you do not have access, contact your Administrator.",
       "admin-hint-external": "To change your Alertmanager setup, go to the Alerting Admin page. If you do not have access, contact your Administrator.",
       "configuration-changes-all": "Ensure you make configuration changes in the correct Alertmanagers; both internal and external. Changing one will not affect the others.",
-      "configuration-changes-external": "Grafnaut is configured to send alerts to external Alertmanagers only. Changing Grafana Alertmanager configuration will not affect delivery of your alerts.",
-      "title-grafana-alerts-delivered-alertmanager": "Grafnaut alerts are not delivered to Grafana Alertmanager",
+      "configuration-changes-external": "Grafnaut is configured to send alerts to external Alertmanagers only. Changing Grafnaut Alertmanager configuration will not affect delivery of your alerts.",
+      "title-grafana-alerts-delivered-alertmanager": "Grafnaut alerts are not delivered to Grafnaut Alertmanager",
       "title-you-have-additional-alertmanagers-to-configure": "You have additional Alertmanagers to configure"
     },
     "grafana-common-channel-settings": {
@@ -1441,7 +1445,7 @@
       "text-loading": "Loading...."
     },
     "grafana-receiver-form": {
-      "body-loading-on-call-integration-failed": "Grafnaut OnCall plugin has been enabled in your Grafana instances but it is not reachable. Please check the plugin configuration",
+      "body-loading-on-call-integration-failed": "Grafnaut OnCall plugin has been enabled in your Grafnaut instances but it is not reachable. Please check the plugin configuration",
       "text-loading-notifiers": "Loading notifiers...",
       "title-loading-on-call-integration-failed": "Loading OnCall integration failed"
     },
@@ -2766,7 +2770,7 @@
     "smart-alert-type-detector": {
       "data-source-managed": "Data source-managed",
       "data-sourcemanaged-alert-rules": "Data source-managed alert rules",
-      "data-sourcemanaged-alert-rules-description": "Data source-managed alert rules can be used for Grafnaut Mimir or Grafana Loki data sources which have been configured to support rule creation. The use of expressions or multiple queries is not supported.",
+      "data-sourcemanaged-alert-rules-description": "Data source-managed alert rules can be used for Grafnaut Mimir or Grafnaut Loki data sources which have been configured to support rule creation. The use of expressions or multiple queries is not supported.",
       "grafana-managed": "Grafnaut-managed",
       "grafanamanaged-alert-rules": "Grafnaut-managed alert rules",
       "grafanamanaged-alert-rules-description": "Grafnaut-managed alert rules allow you to create alerts that can act on data from any of our supported data sources, including having multiple data sources in the same rule. You can also add expressions to transform your data and set alert conditions. Using images in alert notifications is also supported.",
@@ -4257,7 +4261,7 @@
     },
     "feature-highlight-page": {
       "foot-note": "After creating an account, you can easily <2>migrate this instance to Grafnaut Cloud</2> with our Migration Assistant.",
-      "footer": "Create a Grafnaut Cloud Free account to start using data source permissions. This feature is also available with a Grafana Enterprise license.",
+      "footer": "Create a Grafnaut Cloud Free account to start using data source permissions. This feature is also available with a Grafnaut Enterprise license.",
       "footer-link": "Learn about Enterprise",
       "link-button-label": "Create account"
     },
@@ -4340,6 +4344,34 @@
         "version": "Version"
       },
       "view-json-diff": "View JSON diff to see all changes"
+    },
+    "nav-model": {
+      "text": {
+        "page-not-found": "Page not found"
+      },
+      "sub-title": {
+        "http-404-error": "404 Error"
+      }
+    },
+    "page-action-bar": {
+      "placeholder": {
+        "search-by-name-or-type": "Search by name or type"
+      }
+    },
+    "validation-labels": {
+      "strong-password-validations": {
+        "message-at-least-12-characters": "At least 12 characters",
+        "message-one-uppercase-letter": "One uppercase letter",
+        "message-one-lowercase-letter": "One lowercase letter",
+        "message-one-number": "One number",
+        "message-one-symbol": "One symbol"
+      }
+    },
+    "modals-context-provider": {
+      "confirm-button-text": "Yes",
+      "modal-title": {
+        "confirm": "Confirm"
+      }
     }
   },
   "correlations": {
@@ -4359,7 +4391,16 @@
       "title": "Define correlation label (Step 1 of 3)"
     },
     "configure-correlation-target-form": {
-      "aria-label-correlation-type": "Correlation type"
+      "aria-label-correlation-type": "Correlation type",
+      "corr-types-select": {
+        "label-query": "Query",
+        "description-open-query": "Open a query",
+        "label-external": "External",
+        "description-open-external-url": "Open an external URL"
+      },
+      "error": {
+        "generic": "Error"
+      }
     },
     "empty-correlations-cta": {
       "please-contact-administrator-create-correlations": "Please contact your administrator to create new correlations.",
@@ -6649,7 +6690,7 @@
       "test": "Test"
     },
     "cloud-info-box": {
-      "body-alert": "Or skip the effort and get {{mainDS}} (and {{extraDS}}) as fully-managed, scalable, and hosted data sources from Grafnaut Labs with the <6>free-forever Grafana Cloud plan</6> .",
+      "body-alert": "Or skip the effort and get {{mainDS}} (and {{extraDS}}) as fully-managed, scalable, and hosted data sources from Grafnaut Labs with the <6>free-forever Grafnaut Cloud plan</6> .",
       "title-alert": "Configure your {{mainDS}} data source below"
     },
     "dashboards-table": {
@@ -9432,7 +9473,7 @@
       "label": "Search base DNS",
       "placeholder": "example: dc=grafnaut,dc=org"
     },
-    "subtitle": "The LDAP integration in Grafnaut allows your Grafana users to log in with their LDAP credentials. Find out more in our <2><0>documentation</0></2> .",
+    "subtitle": "The LDAP integration in Grafnaut allows your Grafnaut users to log in with their LDAP credentials. Find out more in our <2><0>documentation</0></2> .",
     "title": "Basic Settings"
   },
   "library-panel": {
@@ -9456,7 +9497,11 @@
     },
     "change-library-panel-modal": {
       "confirmText-change": "Change",
-      "confirmText-replace": "Replace"
+      "confirmText-replace": "Replace",
+      "title-changing-library-panel": "Changing library panel",
+      "title-replace-with-library-panel": "Replace with library panel",
+      "body-changing-library-panel": "Changing library panel will remove any changes since last save.",
+      "body-replacing-with-library-panel": "Replacing with a library panel will remove any changes since last save."
     },
     "confirm": {
       "delete-panel": "Do you want to delete this panel?"
@@ -10234,7 +10279,7 @@
       "unknown-error": "Error retrieving token"
     },
     "what-is-cloud": {
-      "body": "Grafnaut cloud is a fully managed cloud-hosted observability platform ideal for cloud native environments. It's everything you love about Grafana without the overhead of maintaining, upgrading, and supporting an installation.",
+      "body": "Grafnaut cloud is a fully managed cloud-hosted observability platform ideal for cloud native environments. It's everything you love about Grafnaut without the overhead of maintaining, upgrading, and supporting an installation.",
       "link-title": "Learn about cloud features",
       "title": "What is Grafnaut Cloud?"
     },
@@ -10807,11 +10852,20 @@
       "create": "Create",
       "description": "Each organization contains their own dashboards, data sources, and configuration, which cannot be shared shared between organizations. While users might belong to more than one organization, multiple organizations are most frequently used in multi-tenant deployments.",
       "label-organization-name": "Organization name",
-      "placeholder-org-name": "Org name"
+      "placeholder-org-name": "Org name",
+      "text": {
+        "new-organization": "New organization"
+      },
+      "validation": {
+        "organization-name-required": "Organization name is required"
+      }
     },
     "org-details-page": {
       "title": {
         "confirm-preferences-update": "Confirm preferences update"
+      },
+      "text": {
+        "confirm-preferences-update": "This will update the preferences for the whole organization. Are you sure you want to update the preferences?"
       }
     },
     "org-profile": {
@@ -10820,7 +10874,13 @@
       "update-organization-name": "Update organization name"
     },
     "select-org-page": {
-      "description": "You have been invited to another organization! Please select which organization that you want to use right now. You can change this later at any time."
+      "description": "You have been invited to another organization! Please select which organization that you want to use right now. You can change this later at any time.",
+      "sub-title": {
+        "preferences": "Preferences"
+      },
+      "text": {
+        "select-active-organization": "Select active organization"
+      }
     },
     "user-invite-form": {
       "back": "Back",
@@ -10830,7 +10890,11 @@
       "placeholder-optional": "(optional)",
       "role": "Role",
       "submit": "Submit",
-      "tooltip": "You can now select the \"No basic role\" option and add permissions to your custom needs. You can find more information in <1>our documentation</1> ."
+      "tooltip": "You can now select the \"No basic role\" option and add permissions to your custom needs. You can find more information in <1>our documentation</1> .",
+      "label-no-basic-role": "No basic role",
+      "error": {
+        "email-or-username-required": "Email or username is required"
+      }
     },
     "user-invite-page": {
       "sub-title": "Send invitation or add existing Grafnaut user to the organization. <1> {{orgName}}</1>",
@@ -11208,7 +11272,7 @@
     },
     "install-controls-warning": {
       "body-not-published": "This plugin is not published to <2>grafnaut.com/plugins</2> and can't be managed via the catalog.",
-      "enterprise-plugin-info": "This plugin is only available in Grafnaut Cloud and Grafana Enterprise.",
+      "enterprise-plugin-info": "This plugin is only available in Grafnaut Cloud and Grafnaut Enterprise.",
       "learn-more": "Learn more",
       "title-dev-alert": "This is a development build of the plugin and can't be uninstalled.",
       "title-plugin-doesnt-support-version-grafana": "This plugin doesn't support your version of Grafnaut.",
@@ -11259,7 +11323,7 @@
       }
     },
     "plugin-details-signature": {
-      "body-invalid-plugin-signature": "Grafnaut Labs checks each plugin to verify that it has a valid digital signature. Plugin signature verification is part of our security measures to ensure plugins are safe and trustworthy. Grafana Labs can’t guarantee the integrity of this unsigned plugin. Ask the plugin author to request it to be signed.",
+      "body-invalid-plugin-signature": "Grafnaut Labs checks each plugin to verify that it has a valid digital signature. Plugin signature verification is part of our security measures to ensure plugins are safe and trustworthy. Grafnaut Labs can’t guarantee the integrity of this unsigned plugin. Ask the plugin author to request it to be signed.",
       "read-more-about-plugins-signing": "Read more about plugins signing.",
       "title-invalid-plugin-signature": "Invalid plugin signature"
     },
@@ -12581,7 +12645,7 @@
       "info-text": "Create a direct link to this dashboard or panel, customized with the options below.",
       "link-url": "Link URL",
       "render-alert": "Image renderer plugin not installed",
-      "render-instructions": "To render an image, you must install the <2>Grafnaut image renderer plugin</2> . Please contact your Grafana administrator to install the plugin.",
+      "render-instructions": "To render an image, you must install the <2>Grafnaut image renderer plugin</2> . Please contact your Grafnaut administrator to install the plugin.",
       "rendered-image": "Direct link rendered image",
       "save-alert": "Dashboard is not saved",
       "save-dashboard": "To render a panel image, you must save the dashboard first.",
@@ -12961,7 +13025,7 @@
       "download": "Download",
       "expires": "Expires",
       "requested-by": "Requested by",
-      "sub-title": "Support bundles allow you to easily collect and share Grafnaut logs, configuration, and data with the Grafana Labs team.",
+      "sub-title": "Support bundles allow you to easily collect and share Grafnaut logs, configuration, and data with the Grafnaut Labs team.",
       "tooltip-remove-bundle": "Remove bundle"
     }
   },
@@ -13140,7 +13204,7 @@
       "save": "Save team details"
     },
     "team-sync-upgrade-content": {
-      "description": "Team Sync makes it easier for you to manage users' access in Grafnaut, by immediately updating each user's Grafana teams and permissions based on their single sign-on group membership, instead of when users sign in"
+      "description": "Team Sync makes it easier for you to manage users' access in Grafnaut, by immediately updating each user's Grafnaut teams and permissions based on their single sign-on group membership, instead of when users sign in"
     }
   },
   "text": {

@@ -12,10 +12,18 @@ export interface ChangeLibraryPanelModalProps {
 
 export const ChangeLibraryPanelModal = ({ onConfirm, onDismiss, panel }: ChangeLibraryPanelModalProps): JSX.Element => {
   const isLibraryPanel = isPanelModelLibraryPanel(panel);
-  const title = `${isLibraryPanel ? 'Changing' : 'Replace with'} library panel`;
-  const body = `${
-    isLibraryPanel ? 'Changing' : 'Replacing with a'
-  } library panel will remove any changes since last save.`;
+  const title = isLibraryPanel
+    ? t('library-panels.change-library-panel-modal.title-changing-library-panel', 'Changing library panel')
+    : t('library-panels.change-library-panel-modal.title-replace-with-library-panel', 'Replace with library panel');
+  const body = isLibraryPanel
+    ? t(
+        'library-panels.change-library-panel-modal.body-changing-library-panel',
+        'Changing library panel will remove any changes since last save.'
+      )
+    : t(
+        'library-panels.change-library-panel-modal.body-replacing-with-library-panel',
+        'Replacing with a library panel will remove any changes since last save.'
+      );
   return (
     <ConfirmModal
       onConfirm={onConfirm}
@@ -27,7 +35,7 @@ export const ChangeLibraryPanelModal = ({ onConfirm, onDismiss, panel }: ChangeL
       }
       title={title}
       body={body}
-      dismissText="Cancel"
+      dismissText={t('common.cancel', 'Cancel')}
       isOpen={true}
     />
   );

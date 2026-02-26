@@ -2,6 +2,7 @@ import { useEffect, useMemo, useState } from 'react';
 import * as React from 'react';
 
 import { textUtil } from '@grafana/data';
+import { t } from '@grafana/i18n';
 import { locationService } from '@grafana/runtime';
 import { ConfirmModal, ConfirmModalProps, ModalsContext } from '@grafana/ui';
 import { ModalsContextState } from '@grafana/ui/internal';
@@ -86,24 +87,27 @@ function showConfirmModal({ payload }: ShowConfirmModalEvent, setState: (state: 
     noText,
     text,
     text2htmlBind,
-    yesText = 'Yes',
+    yesText,
     icon,
-    title = 'Confirm',
+    title,
     yesButtonVariant,
   } = payload;
 
   const hideModal = () => setState({ component: null, props: {} });
+  const confirmButtonText = yesText ?? t('core.modals-context-provider.confirm-button-text', 'Yes');
+  const dismissButtonText = noText ?? t('common.cancel', 'Cancel');
+  const modalTitle = title ?? t('core.modals-context-provider.modal-title.confirm', 'Confirm');
 
   const props: ConfirmModalProps = {
-    confirmText: yesText,
+    confirmText: confirmButtonText,
     confirmButtonVariant: yesButtonVariant,
     confirmationText: confirmText,
     icon,
-    title,
+    title: modalTitle,
     body: text,
     description: text2 && text2htmlBind ? textUtil.sanitize(text2) : text2,
     isOpen: true,
-    dismissText: noText,
+    dismissText: dismissButtonText,
     onConfirm: () => {
       onConfirm();
       hideModal();

@@ -32,8 +32,11 @@ export class OrgDetailsPage extends PureComponent<Props> {
       appEvents.publish(
         new ShowConfirmModalEvent({
           title: t('org.org-details-page.title.confirm-preferences-update', 'Confirm preferences update'),
-          text: 'This will update the preferences for the whole organization. Are you sure you want to update the preferences?',
-          yesText: 'Save',
+          text: t(
+            'org.org-details-page.text.confirm-preferences-update',
+            'This will update the preferences for the whole organization. Are you sure you want to update the preferences?'
+          ),
+          yesText: t('common.save', 'Save'),
           yesButtonVariant: 'primary',
           onConfirm: async () => resolve(true),
           onDismiss: async () => resolve(false),

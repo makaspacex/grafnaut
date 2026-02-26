@@ -28,13 +28,20 @@ enum SortOrder {
   Descending = 'alpha-desc',
 }
 
-const sortOptions: Array<SelectableValue<SortOrder>> = [
-  { label: 'Alphabetically [A-Z]', value: SortOrder.Ascending },
-  { label: 'Alphabetically [Z-A]', value: SortOrder.Descending },
+const getSortOptions = (): Array<SelectableValue<SortOrder>> => [
+  {
+    label: t('alerting.alerts-folder-view.sort-options.label-alphabetically-az', 'Alphabetically [A-Z]'),
+    value: SortOrder.Ascending,
+  },
+  {
+    label: t('alerting.alerts-folder-view.sort-options.label-alphabetically-za', 'Alphabetically [Z-A]'),
+    value: SortOrder.Descending,
+  },
 ];
 
 export const AlertsFolderView = ({ folder, rules }: Props) => {
   const styles = useStyles2(getStyles);
+  const sortOptions = getSortOptions();
 
   const onTagClick = (tagName: string) => {
     const matchersString = combineMatcherStrings(labelFilter, tagName);

@@ -1,6 +1,7 @@
 import { css } from '@emotion/css';
 
 import { SelectableValue, GrafanaTheme2 } from '@grafana/data';
+import { t } from '@grafana/i18n';
 import { LinkButton, FilterInput, InlineField, Checkbox, useStyles2 } from '@grafana/ui';
 
 import { SortPicker } from '../Select/SortPicker';
@@ -30,11 +31,13 @@ export default function PageActionBar({
   linkButton,
   setSearchQuery,
   target,
-  placeholder = 'Search by name or type',
+  placeholder,
   sortPicker,
   filterCheckbox,
 }: Props) {
   const styles = useStyles2(getStyles);
+  const searchPlaceholder =
+    placeholder ?? t('core.page-action-bar.placeholder.search-by-name-or-type', 'Search by name or type');
   const linkProps: Omit<Parameters<typeof LinkButton>[0], 'children'> = {
     href: linkButton?.href,
     disabled: linkButton?.disabled,
@@ -47,7 +50,7 @@ export default function PageActionBar({
   return (
     <div className={styles.container}>
       <InlineField grow>
-        <FilterInput value={searchQuery} onChange={setSearchQuery} placeholder={placeholder} />
+        <FilterInput value={searchQuery} onChange={setSearchQuery} placeholder={searchPlaceholder} />
       </InlineField>
       {filterCheckbox && (
         <Checkbox
