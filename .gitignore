@@ -12,6 +12,10 @@ awsconfig
 /e2e/tmp
 /scripts/grafana-server/tmp
 vendor/
+!/public/vendor/
+/public/vendor/*
+!/public/vendor/flot/
+!/public/vendor/flot/*.js
 /docs/menu.yaml
 /requests
 tsconfig.tsbuildinfo
