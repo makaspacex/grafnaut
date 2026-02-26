@@ -50,7 +50,7 @@ export const LoginLayout = ({ children, branding, isChangingPassword }: React.Pr
                 </h1>
               ) : (
                 <>
-                  <h1 className={loginStyles.mainTitle}>{loginTitle}</h1>
+                  <h1 className={cx(loginStyles.mainTitle, loginStyles.welcomeTitle)}>{loginTitle}</h1>
                   {subTitle && <h3 className={loginStyles.subTitle}>{subTitle}</h3>}
                 </>
               )}
@@ -131,10 +131,21 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
     }),
     mainTitle: css({
       fontSize: 22,
+      fontWeight: theme.typography.fontWeightBold,
 
       [theme.breakpoints.up('sm')]: {
         fontSize: 32,
       },
+    }),
+    welcomeTitle: css({
+      background: theme.isDark
+        ? 'linear-gradient(96deg, #35d7ff 0%, #5d8dff 38%, #9a63ff 62%, #ff5cbc 100%)'
+        : 'linear-gradient(96deg, #0089c9 0%, #2d63df 40%, #7a49d4 70%, #d43d96 100%)',
+      WebkitBackgroundClip: 'text',
+      backgroundClip: 'text',
+      color: 'transparent',
+      WebkitTextFillColor: 'transparent',
+      textShadow: theme.isDark ? '0 0 18px rgba(93, 141, 255, 0.14)' : 'none',
     }),
     subTitle: css({
       fontSize: theme.typography.size.md,
@@ -152,6 +163,7 @@ export const getLoginStyles = (theme: GrafanaTheme2) => {
       minHeight: 320,
       borderRadius: theme.shape.radius.lg,
       padding: theme.spacing(2, 0),
+      overflow: 'hidden',
       opacity: 0,
       [theme.transitions.handleMotion('no-preference')]: {
         transition: 'opacity 0.5s ease-in-out',
