@@ -7,7 +7,7 @@
   "info": {
     "description": "Uses the result set from another panel in the same dashboard",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {

@@ -1,6 +1,6 @@
 # Annotation List Panel - Native Plugin
 
-This Annotations List panel is **included** with Grafana.
+This Annotations List panel is **included** with Grafnaut.
 
 Using the annotations list panel, you can quickly collect, filter and access annotations for easy reference or referral.
 

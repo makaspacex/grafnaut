@@ -93,7 +93,7 @@ export function RichHistorySettingsTab(props: RichHistorySettingsProps) {
           label={t('explore.rich-history-settings-tab.history-time-span', 'History time span')}
           description={t(
             'explore.rich-history-settings-tab.history-time-span-description',
-            'Select the period of time for which Grafana will save your query history. Up to {{MAX_HISTORY_ITEMS}} entries will be stored.',
+            'Select the period of time for which Grafnaut will save your query history. Up to {{MAX_HISTORY_ITEMS}} entries will be stored.',
             { MAX_HISTORY_ITEMS }
           )}
         >
@@ -105,7 +105,7 @@ export function RichHistorySettingsTab(props: RichHistorySettingsProps) {
         <Alert severity="info" title={t('explore.rich-history-settings-tab.history-time-span', 'History time span')}>
           {t(
             'explore.rich-history-settings-tab.alert-info',
-            "Grafana will keep entries up to {{optionLabel}}.Starred entries won't be deleted.",
+            "Grafnaut will keep entries up to {{optionLabel}}.Starred entries won't be deleted.",
             {
               optionLabel: selectedOption?.label,
             }

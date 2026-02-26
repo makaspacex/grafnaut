@@ -9,7 +9,7 @@
   "info": {
     "description": "Continuous profiling for analysis of CPU and memory usage, down to the line number and throughout time. Saving infrastructure cost, improving performance, and increasing reliability.",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://www.grafana.com"
     },
     "keywords": ["grafana", "datasource", "parca", "profiling"],

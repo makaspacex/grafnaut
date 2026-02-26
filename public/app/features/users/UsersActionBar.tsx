@@ -51,7 +51,7 @@ export const UsersActionBarUnconnected = ({
   ];
   const canAddToOrg: boolean = contextSrv.hasPermission(AccessControlAction.OrgUsersAdd);
   // Show invite button in the following cases:
-  // 1) the instance is not a hosted Grafana instance (!config.externalUserMngInfo)
+  // 1) the instance is not a hosted Grafnaut instance (!config.externalUserMngInfo)
   // 2) new basic auth users can be created for this instance (!config.disableLoginForm).
   const showInviteButton: boolean = canAddToOrg && !(config.disableLoginForm && config.externalUserMngInfo);
 

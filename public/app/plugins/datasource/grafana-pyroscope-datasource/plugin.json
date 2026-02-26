@@ -17,7 +17,7 @@
   "info": {
     "description": "Data source for Grafana Pyroscope, horizontally-scalable, highly-available, multi-tenant continuous profiling aggregation system.",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://www.grafana.com"
     },
     "keywords": ["grafana", "datasource", "phlare", "flamegraph", "profiling", "continuous profiling", "pyroscope"],

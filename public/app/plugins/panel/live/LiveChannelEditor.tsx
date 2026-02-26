@@ -20,7 +20,7 @@ import { LivePanelOptions } from './types';
 type Props = StandardEditorProps<Partial<LiveChannelAddress>, {}, LivePanelOptions>;
 
 const scopes: Array<SelectableValue<LiveChannelScope>> = [
-  { label: 'Grafana', value: LiveChannelScope.Grafana, description: 'Core grafana live features' },
+  { label: 'Grafnaut', value: LiveChannelScope.Grafana, description: 'Core grafnaut live features' },
   { label: 'Data Sources', value: LiveChannelScope.DataSource, description: 'Data sources with live support' },
   { label: 'Plugins', value: LiveChannelScope.Plugin, description: 'Plugins with live support' },
   { label: 'Stream', value: LiveChannelScope.Stream, description: 'data streams (eg, influx style)' },
@@ -111,9 +111,9 @@ export function LiveChannelEditor(props: Props) {
 
   return (
     <>
-      <Alert title={t('live.live-channel-editor.title-grafana-live', 'Grafana Live')} severity="info">
+      <Alert title={t('live.live-channel-editor.title-grafana-live', 'Grafnaut Live')} severity="info">
         <Trans i18nKey="live.live-channel-editor.description-grafana-live">
-          This supports real-time event streams in Grafana core. This feature is under heavy development. Expect the
+          This supports real-time event streams in Grafnaut core. This feature is under heavy development. Expect the
           interfaces and structures to change as this becomes more production ready.
         </Trans>
       </Alert>

@@ -6,9 +6,9 @@
   "state": "alpha",
 
   "info": {
-    "description": "Debug Panel for Grafana",
+    "description": "Debug Panel for Grafnaut",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {

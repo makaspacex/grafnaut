@@ -16,9 +16,9 @@
   },
   "executable": "gpx_loki",
   "info": {
-    "description": "Like Prometheus but for logs. OSS logging solution from Grafana Labs",
+    "description": "Like Prometheus but for logs. OSS logging solution from Grafnaut Labs",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {

@@ -126,9 +126,9 @@ export class LivePanel extends PureComponent<Props, State> {
     const preformatted = `[feature_toggles]
     enable = live`;
     return (
-      <Alert title={t('live.live-panel.title-grafana-live', 'Grafana Live')} severity="info">
+      <Alert title={t('live.live-panel.title-grafana-live', 'Grafnaut Live')} severity="info">
         <p>
-          <Trans i18nKey="live.live-panel.grafana-requires-feature">Grafana live requires a feature flag to run</Trans>
+          <Trans i18nKey="live.live-panel.grafana-requires-feature">Grafnaut live requires a feature flag to run</Trans>
         </p>
 
         {/* eslint-disable-next-line @grafana/i18n/no-untranslated-strings */}
@@ -252,7 +252,7 @@ export class LivePanel extends PureComponent<Props, State> {
     const { addr, error } = this.state;
     if (!addr) {
       return (
-        <Alert title={t('live.live-panel.title-grafana-live', 'Grafana Live')} severity="info">
+        <Alert title={t('live.live-panel.title-grafana-live', 'Grafnaut Live')} severity="info">
           <Trans i18nKey="live.live-panel.panel-editor-channel">Use the panel editor to pick a channel</Trans>
         </Alert>
       );

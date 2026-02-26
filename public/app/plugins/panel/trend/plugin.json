@@ -8,7 +8,7 @@
   "info": {
     "description": "Like timeseries, but when x != time",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {

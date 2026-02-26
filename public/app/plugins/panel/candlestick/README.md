@@ -2,7 +2,7 @@
 
 The candlestick panel shows a chart that is typically used to describe price movements of a security, derivative, or currency.
 
-This chart is **included** with Grafana.
+This chart is **included** with Grafnaut.
 
 Read more about it here:
 

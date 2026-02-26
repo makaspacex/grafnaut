@@ -14,9 +14,9 @@
   "backend": true,
 
   "info": {
-    "description": "High volume, minimal dependency trace storage.  OSS tracing solution from Grafana Labs.",
+    "description": "High volume, minimal dependency trace storage.  OSS tracing solution from Grafnaut Labs.",
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {

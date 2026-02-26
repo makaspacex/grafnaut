@@ -231,7 +231,7 @@ export class ContextSrv {
 
     // skip if there is no session to rotate
     // if a user has a session but not yet a session expiry cookie, can happen during upgrade
-    // from an older version of grafana, we never schedule the job and the fallback logic
+    // from an older version of grafnaut, we never schedule the job and the fallback logic
     // in backend_srv will take care of rotations until first rotation has been made and
     // page has been reloaded.
     if (getSessionExpiry() === 0) {

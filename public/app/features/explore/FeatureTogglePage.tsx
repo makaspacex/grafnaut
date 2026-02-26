@@ -21,7 +21,7 @@ export default function FeatureTogglePage() {
           <Trans i18nKey="explore.feature-toggle-page.title-explore-disabled">Explore is disabled</Trans>
         </h1>
         <Trans i18nKey="explore.feature-toggle-page.description-explore-disabled">
-          To enable Explore, enable it in the Grafana config:
+          To enable Explore, enable it in the Grafnaut config:
         </Trans>
         <div>
           <pre>

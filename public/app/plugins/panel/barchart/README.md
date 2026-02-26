@@ -2,7 +2,7 @@
 
 This panel visualization allows you to graph categorical data.
 
-This Bar chart is **included** with Grafana.
+This Bar chart is **included** with Grafnaut.
 
 Read more about it here:
 

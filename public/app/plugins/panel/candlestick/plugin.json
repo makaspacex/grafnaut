@@ -7,7 +7,7 @@
     "description": "Graphical representation of price movements of a security, derivative, or currency.",
     "keywords": ["financial", "price", "currency", "k-line"],
     "author": {
-      "name": "Grafana Labs",
+      "name": "Grafnaut Labs",
       "url": "https://grafana.com"
     },
     "logos": {
