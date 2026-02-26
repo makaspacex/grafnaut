@@ -295,3 +295,12 @@ Use admonitions sparingly.
 Only include exceptional information in admonitions.
 
 <!-- docs-ai-end -->
+
+## Commit messages
+
+When Codex creates git commits in this repository, write commit messages in Chinese.
+
+Use this rule for both:
+
+- The commit title (first line).
+- The optional commit body.

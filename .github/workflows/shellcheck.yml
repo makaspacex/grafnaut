@@ -15,15 +15,12 @@ permissions: {}
 
 jobs:
   shellcheck:
-    # Run on `grafana/grafana` main branch, or on pull requests to prevent double-running on mirrors
-    if: (github.event_name == 'pull_request' || (github.event_name == 'push' && github.repository == 'grafana/grafana'))
     name: Shellcheck scripts
     runs-on: ubuntu-latest
     permissions:
-      contents: read # clone the repository
-
+      contents: read
     steps:
-      - name: Clone repository
+      - name: Checkout repository
         uses: actions/checkout@v5
         with:
           persist-credentials: false
