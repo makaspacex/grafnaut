@@ -1,7 +1,4 @@
-import {
-  ENGLISH_US,
-  CHINESE_SIMPLIFIED,
-} from './constants';
+import { ENGLISH_US, CHINESE_SIMPLIFIED } from './constants';
 
 interface TranslationDefinition {
   /** IETF language tag */

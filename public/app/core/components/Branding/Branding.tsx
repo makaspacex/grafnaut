@@ -193,10 +193,8 @@ const MenuLogo: FC<BrandComponentProps> = ({ className }) => {
 
 const LoginBoxBackground = () => {
   const theme = useTheme2();
-  const darkBg =
-    'linear-gradient(180deg, rgba(11, 24, 42, 0.82) 0%, rgba(10, 22, 40, 0.84) 100%)';
-  const lightBg =
-    'linear-gradient(180deg, rgba(248, 252, 255, 0.9) 0%, rgba(242, 248, 255, 0.9) 100%)';
+  const darkBg = 'linear-gradient(180deg, rgba(11, 24, 42, 0.82) 0%, rgba(10, 22, 40, 0.84) 100%)';
+  const lightBg = 'linear-gradient(180deg, rgba(248, 252, 255, 0.9) 0%, rgba(242, 248, 255, 0.9) 100%)';
 
   return css({
     background: theme.isDark ? darkBg : lightBg,

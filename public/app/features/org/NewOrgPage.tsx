@@ -59,7 +59,10 @@ export const NewOrgPage = ({ createOrganization }: Props) => {
                     <Input
                       placeholder={t('org.new-org-page.placeholder-org-name', 'Org name')}
                       {...register('name', {
-                        required: t('org.new-org-page.validation.organization-name-required', 'Organization name is required'),
+                        required: t(
+                          'org.new-org-page.validation.organization-name-required',
+                          'Organization name is required'
+                        ),
                       })}
                     />
                   </Field>
