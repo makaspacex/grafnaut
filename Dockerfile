@@ -33,11 +33,9 @@ RUN apk add --no-cache make build-base python3
 COPY package.json project.json nx.json yarn.lock .yarnrc.yml ./
 COPY .yarn .yarn
 COPY packages packages
-COPY e2e-playwright e2e-playwright
 COPY public public
 COPY LICENSE ./
 COPY conf/defaults.ini ./conf/defaults.ini
-COPY e2e e2e
 
 #
 # Set the node env according to defaults or argument passed
@@ -121,7 +119,6 @@ RUN go mod download
 COPY embed.go Makefile build.go package.json ./
 COPY cue.mod cue.mod
 COPY kinds kinds
-COPY local local
 COPY packages/grafana-schema packages/grafana-schema
 COPY public/app/plugins public/app/plugins
 COPY public/api-merged.json public/api-merged.json

@@ -1,0 +1,14 @@
+{
+  "files.autoSave": "off",
+  "i18n-ally.localesPaths": [
+    "public/locales",
+    "packages/grafana-alerting/src/locales",
+    "packages/grafana-prometheus/src/locales",
+    "packages/grafana-sql/src/locales",
+    "public/app/plugins/datasource/azuremonitor/locales",
+    "public/app/plugins/datasource/cloudwatch/language",
+    "public/app/plugins/datasource/mssql/locales",
+    "public/app/plugins/datasource/parca/lang"
+  ],
+  "i18n-ally.sourceLanguage": "zh-Hans"
+}
