@@ -1197,11 +1197,9 @@ embed.go @grafana/grafana-as-code
 /.github/PULL_REQUEST_TEMPLATE.md @torkelo
 /.github/bot.md @torkelo
 /.github/commands.json @torkelo
-/.github/dependabot.yml @grafana/frontend-ops
 /.github/issue-opened.json @grafana/grafana-community-support
 /.github/pr-checks.json @tolzhabayev
 /.github/pr-commands.json @tolzhabayev
-/.github/renovate.json5 @grafana/frontend-ops
 /.github/actions/check-jobs/action.yml @grafana/grafana-frontend-platform
 /.github/actions/build-package @grafana/grafana-developer-enablement-squad
 /.github/actions/change-detection @grafana/grafana-developer-enablement-squad
