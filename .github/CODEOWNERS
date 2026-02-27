@@ -1203,8 +1203,6 @@ embed.go @grafana/grafana-as-code
 /.github/pr-commands.json @tolzhabayev
 /.github/renovate.json5 @grafana/frontend-ops
 /.github/actions/check-jobs/action.yml @grafana/grafana-frontend-platform
-/.github/actions/setup-enterprise/action.yml @grafana/grafana-backend-group
-/.github/actions/setup-grafana-bench/ @Proximyst
 /.github/actions/build-package @grafana/grafana-developer-enablement-squad
 /.github/actions/change-detection @grafana/grafana-developer-enablement-squad
 /.github/actions/setup-node @grafana/grafana-frontend-platform
@@ -1283,7 +1281,6 @@ embed.go @grafana/grafana-as-code
 /.github/workflows/release-build.yml @grafana/grafana-developer-enablement-squad
 /.github/workflows/cleanup-branches.yml @grafana/grafana-developer-enablement-squad
 /.github/workflows/publish-artifact.yml @grafana/grafana-developer-enablement-squad
-/.github/actions/changelog @zserge
 /.github/workflows/swagger-gen.yml @grafana/grafana-backend-group
 /.github/workflows/pr-frontend-unit-tests.yml @grafana/grafana-frontend-platform
 /.github/workflows/frontend-lint.yml @grafana/grafana-frontend-platform

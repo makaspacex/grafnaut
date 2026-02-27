@@ -1,4 +1,4 @@
-name: Build and Package Grafana Enterprise / Pro
+name: Build and Package Grafana
 description: Creates Grafana artifacts using Dagger & `pkg/build/daggerbuild`
 inputs:
   artifacts:
@@ -8,17 +8,12 @@ inputs:
       Not every combination of `package-type`, `grafana-edition`, and `architecture` are supported.
       Examples:
         * `grafana:linux/amd64:targz`, `grafana:linux/amd64:deb`
-        * `enterprise:linux/arm64:rpm, enterprise:linux/amd64:docker`
-        * `pro:docker:llinux/amd64`
+        * `grafana:linux/amd64:rpm, grafana:linux/amd64:docker`
     required: true
     type: string
   grafana-path:
     description: Path to a clone of the 'grafana' repo
     default: grafana
-    type: string
-  grafana-enterprise-path:
-    description: Path to a clone of the 'grafana-enterprise' repo
-    default: grafana-enterprise
     type: string
   github-token:
     type: string
@@ -92,9 +87,6 @@ outputs:
   grafana-commit:
     description: Commit hash of the HEAD of the grafana repository used to build grafana.
     value: ${{ steps.output.outputs.grafana_commit }}
-  enterprise-commit:
-    description: Commit hash of the HEAD of the grafana-enterprise repository used to build grafana.
-    value: ${{ steps.output.outputs.enterprise_commit }}
   version:
     description: The `grafana` version that was embedded in the binary
     value: ${{ steps.output.outputs.version }}
@@ -104,12 +96,9 @@ runs:
     - shell: bash
       run: | # zizmor: ignore[github-env]
         echo "GRAFANA_PATH=${{ github.workspace }}/${GRAFANA_DIR}" >> "$GITHUB_ENV"
-        echo "ENTERPRISE_PATH=${{ github.workspace }}/${ENTERPRISE_DIR}" >> "$GITHUB_ENV"
       env:
-        GB_PATH: ${{ inputs.path }}
         GRAFANA_DIR: ${{ inputs.grafana-path }}
-        ENTERPRISE_DIR: ${{ inputs.enterprise-path }}
-    - name: Build Grafana Enterprise packages
+    - name: Build Grafana packages
       uses: dagger/dagger-for-github@e47aba410ef9bb9ed81a4d2a97df31061e5e842e
       env:
         VERSION: ${{ inputs.version }}
@@ -130,7 +119,7 @@ runs:
         verb: run
         dagger-flags: --verbose=0
         version: 0.18.8
-        args: go run -C ${GRAFANA_PATH} ./pkg/build/cmd artifacts --artifacts ${ARTIFACTS} --grafana-dir=${GRAFANA_PATH} --enterprise-dir=${ENTERPRISE_PATH} --version=${VERSION} --patches-repo=${PATCHES_REPO} --patches-ref=${PATCHES_REF} --patches-path=${PATCHES_PATH} --build-id=${BUILD_ID} --tag-format="${TAG_FORMAT}" --ubuntu-tag-format="${UBUNTU_TAG_FORMAT}" --org=${DOCKER_ORG} --registry=${DOCKER_REGISTRY} --checksum=${CHECKSUM} --verify=${VERIFY} > $OUTFILE
+        args: go run -C ${GRAFANA_PATH} ./pkg/build/cmd artifacts --artifacts ${ARTIFACTS} --grafana-dir=${GRAFANA_PATH} --version=${VERSION} --patches-repo=${PATCHES_REPO} --patches-ref=${PATCHES_REF} --patches-path=${PATCHES_PATH} --build-id=${BUILD_ID} --tag-format="${TAG_FORMAT}" --ubuntu-tag-format="${UBUNTU_TAG_FORMAT}" --org=${DOCKER_ORG} --registry=${DOCKER_REGISTRY} --checksum=${CHECKSUM} --verify=${VERIFY} > $OUTFILE
     - id: output
       shell: bash
       env:
@@ -139,5 +128,4 @@ runs:
         echo "dist_dir=dist" | tee -a $GITHUB_OUTPUT
         echo "file=${OUTFILE}" | tee -a $GITHUB_OUTPUT
         echo "grafana_commit=$(git -C ${GRAFANA_PATH} rev-parse HEAD)" | tee -a $GITHUB_OUTPUT
-        echo "enterprise_commit=$(git -C ${ENTERPRISE_PATH} rev-parse HEAD)" | tee -a $GITHUB_OUTPUT
-        echo "version=$(cat ${GRAFANA_BUILD_PATH}/dist/VERSION)" | tee -a $GITHUB_OUTPUT
+        echo "version=$(cat dist/VERSION)" | tee -a $GITHUB_OUTPUT

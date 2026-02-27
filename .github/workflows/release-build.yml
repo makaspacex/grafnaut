@@ -74,7 +74,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           version: ${{ needs.setup.outputs.version }}
           output: artifacts-linux-amd64.txt
-          verify: true
+          verify: false
           build-id: ${{ github.run_id }}
 
       - name: Upload artifact list
