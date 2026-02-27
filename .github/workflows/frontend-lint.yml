@@ -2,10 +2,6 @@ name: Frontend lint and typecheck
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
-      - release-*.*.*
 
 permissions: {}
 

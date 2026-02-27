@@ -2,10 +2,6 @@ name: Backend unit tests
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
-      - release-*.*.*
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}

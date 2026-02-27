@@ -124,8 +124,9 @@ runs:
       shell: bash
       env:
         OUTFILE: ${{ inputs.output }}
+        INPUT_VERSION: ${{ inputs.version }}
       run: |
         echo "dist_dir=dist" | tee -a $GITHUB_OUTPUT
         echo "file=${OUTFILE}" | tee -a $GITHUB_OUTPUT
         echo "grafana_commit=$(git -C ${GRAFANA_PATH} rev-parse HEAD)" | tee -a $GITHUB_OUTPUT
-        echo "version=$(cat dist/VERSION)" | tee -a $GITHUB_OUTPUT
+        echo "version=${INPUT_VERSION}" | tee -a $GITHUB_OUTPUT
