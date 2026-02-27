@@ -1,10 +1,10 @@
 {
-  "author": "Grafana Labs",
+  "author": "Qingbo Labs",
   "license": "AGPL-3.0-only",
   "private": true,
-  "name": "grafana",
+  "name": "grafnaut",
   "version": "12.3.3",
-  "repository": "github:grafana/grafana",
+  "repository": "github:makaspacex/grafnaut",
   "scripts": {
     "check-frontend-dev": "./scripts/check-frontend-dev.sh",
     "build": "NODE_ENV=production nx exec --verbose -- webpack --config scripts/webpack/webpack.prod.js",
