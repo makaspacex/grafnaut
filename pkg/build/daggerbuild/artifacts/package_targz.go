@@ -254,7 +254,6 @@ func (t *Tarball) BuildFile(ctx context.Context, b *dagger.Container, opts *pipe
 
 	directories := []targz.MappedDirectory{
 		targz.NewMappedDir("conf", grafanaDir.Directory("conf")),
-		targz.NewMappedDir("docs/sources", grafanaDir.Directory("docs/sources")),
 		targz.NewMappedDir("packaging/deb", grafanaDir.Directory("packaging/deb")),
 		targz.NewMappedDir("packaging/rpm", grafanaDir.Directory("packaging/rpm")),
 		targz.NewMappedDir("packaging/docker", grafanaDir.Directory("packaging/docker")),
@@ -262,6 +261,13 @@ func (t *Tarball) BuildFile(ctx context.Context, b *dagger.Container, opts *pipe
 		targz.NewMappedDir("bin", backendDir),
 		targz.NewMappedDir("public", frontendDir),
 		targz.NewMappedDir("plugins-bundled", pluginsDir),
+	}
+
+	// Forks may not include docs/sources; skip packaging it when absent.
+	if _, err := grafanaDir.Entries(ctx, dagger.DirectoryEntriesOpts{Path: "docs/sources"}); err == nil {
+		directories = append(directories, targz.NewMappedDir("docs/sources", grafanaDir.Directory("docs/sources")))
+	} else {
+		log.Warn("Skipping optional docs/sources directory", "error", err)
 	}
 
 	root := fmt.Sprintf("grafana-%s", version)
