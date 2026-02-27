@@ -2,10 +2,6 @@ name: Frontend tests
 
 on:
   pull_request:
-  push:
-    branches:
-      - main
-      - release-*.*.*
 
 permissions: {}
 
